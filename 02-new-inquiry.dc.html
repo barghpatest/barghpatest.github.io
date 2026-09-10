@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;padding:0;background:#E9ECEF;font-family:Vazirmatn,Tahoma,sans-serif;direction:rtl;color:#1B2430;text-wrap:pretty}
+  a{color:#2F73B0;text-decoration:none}
+  a:hover{color:#1F5687;text-decoration:underline}
+</style>
+</helmet>
+
+<div style="padding:48px 40px 96px;display:flex;flex-direction:column;gap:56px">
+
+  <div style="display:flex;flex-direction:column;gap:8px;max-width:900px">
+    <div style="font-size:13px;color:#5B6673">صفحهٔ ۵ · دورِ ۲</div>
+    <div style="font-size:30px;font-weight:700">ثبتِ استعلام — فرمِ چهارمرحله‌ای</div>
+    <div style="font-size:15px;color:#4A5563;line-height:1.9">این‌جا برعکسِ جدول است: باز، با فضای نفس‌کشیدن. دو چیدمان، هر دو با نوارِ پیشرفتِ همیشه‌دیده و همان چهار مرحله. پایینِ صفحه موبایل، خطاها و حالتِ فرمِ نیمه‌تمام.</div>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start">
+
+    <div id="2c" style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="background:#1B2430;color:#fff;font-size:13px;font-weight:600;padding:3px 9px;border-radius:5px">۲ج</div>
+        <div style="font-size:18px;font-weight:600">تک‌ستونهٔ باز — یک کار در هر صفحه</div>
+      </div>
+      <div style="font-size:14px;color:#5B6673;max-width:1000px;line-height:1.8">فقط مرحلهٔ جاری دیده می‌شود، در یک ستونِ وسط‌چینِ عریض. کمترین حواس‌پرتی و بیشترین فضا برای فیلدهای فنی؛ در عوض کاربر تا مرورِ نهایی خلاصهٔ انتخاب‌هایش را کنارِ دست ندارد.</div>
+
+      <div style="display:flex;flex-direction:column;gap:20px">
+
+        <div data-screen-label="۰۲ فرم — مرحلهٔ ۱ (تک‌ستونه)" style="width:1000px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+          <div style="height:56px;background:#2F6FA8;display:flex;align-items:center;gap:16px;padding:0 22px">
+            <div style="display:flex;align-items:center;gap:9px">
+              <div style="width:32px;height:32px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/logo.png" alt="برقپا" style="width:25px;height:25px;object-fit:contain"></div>
+              <div style="color:#fff;font-size:16px;font-weight:700">برقپا</div>
+            </div>
+            <div style="flex:1"></div>
+            <div style="color:#D8E6F3;font-size:13px">انصراف و بازگشت به داشبورد</div>
+          </div>
+          <div style="background:#fff;border-bottom:1px solid #E6EAEE;padding:14px 22px;display:flex;gap:0">
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#EAF3FB;border:2px solid #4A91D4;color:#255E8E;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">۱</div><div style="font-size:13px;font-weight:600;color:#255E8E">محل و وندور</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">۲</div><div style="font-size:13px;color:#5B6673">دسته‌بندی</div></div>
+              <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">۳</div><div style="font-size:13px;color:#5B6673">مشخصاتِ فنی</div></div>
+              <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">۴</div><div style="font-size:13px;color:#5B6673">فایل و مهلت</div></div>
+              <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+            </div>
+          </div>
+
+          <div style="padding:40px 22px 48px;display:flex;justify-content:center">
+            <div style="width:100%;max-width:660px;display:flex;flex-direction:column;gap:28px">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="font-size:26px;font-weight:700">محلِ پروژه و وندور</div>
+                <div style="font-size:15px;color:#4A5563;line-height:1.9">اول استان را انتخاب کنید. وندورهای همان استان بلافاصله نمایش داده می‌شوند؛ پیشنهادها باید با لیستِ وندورهایی که انتخاب می‌کنید بخوانند.</div>
+              </div>
+
+              <div style="display:flex;flex-direction:column;gap:9px">
+                <div style="font-size:14px;font-weight:600">استانِ پروژه <span style="color:#C4514E">*</span></div>
+                <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:13px 14px;font-size:15px;display:flex;justify-content:space-between"><span>خراسان رضوی</span><span style="color:#5B6673;font-size:12px">▾</span></div>
+              </div>
+
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;align-items:baseline;gap:10px">
+                  <div style="font-size:14px;font-weight:600">وندور <span style="color:#C4514E">*</span></div>
+                  <div style="font-size:13px;color:#5B6673">حداکثر دو انتخاب · ۲ از ۲ انتخاب شد</div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="display:flex;align-items:center;gap:11px;border:2px solid #4A91D4;background:#F7FAFD;border-radius:6px;padding:14px">
+                    <div style="width:18px;height:18px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex:none">✓</div>
+                    <div style="font-size:15px;flex:1">توزیع برق شهر مشهد</div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:11px;border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:14px">
+                    <div style="width:18px;height:18px;border-radius:4px;border:1px solid #C9D1D9;flex:none"></div>
+                    <div style="font-size:15px;flex:1">توزیع برق خراسان رضوی</div>
+                    <div style="font-size:12px;color:#5B6673">سقفِ انتخاب پر است</div>
+                  </div>
+                  <div style="height:1px;background:#DFE4E9;margin:3px 0"></div>
+                  <div style="display:flex;align-items:center;gap:11px;border:2px solid #4A91D4;background:#F7FAFD;border-radius:6px;padding:14px">
+                    <div style="width:18px;height:18px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex:none">✓</div>
+                    <div style="display:flex;flex-direction:column;gap:3px;flex:1">
+                      <div style="font-size:15px">مطابق با لیستِ توانیر</div>
+                      <div style="font-size:12px;color:#5B6673">سراسری — در همهٔ استان‌ها نمایش داده می‌شود</div>
+                    </div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:11px;border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:14px">
+                    <div style="width:18px;height:18px;border-radius:4px;border:1px solid #C9D1D9;flex:none"></div>
+                    <div style="display:flex;flex-direction:column;gap:3px;flex:1">
+                      <div style="font-size:15px">پروژهٔ داخلی (عدم نیاز به وندور لیست)</div>
+                      <div style="font-size:12px;color:#5B6673">با انتخابِ این گزینه بقیهٔ وندورها غیرفعال می‌شوند و تیکِ انطباق از فروشنده خواسته نمی‌شود</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex;align-items:center;gap:12px;border-top:1px solid #E6EAEE;padding-top:22px">
+                <div style="background:#2F6FA8;color:#fff;font-size:15px;font-weight:600;padding:13px 26px;border-radius:6px">مرحلهٔ بعد</div>
+                <div style="font-size:13px;color:#5B6673">نوشته‌های شما ذخیره می‌شود؛ می‌توانید بعداً ادامه دهید.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-screen-label="۰۲ فرم — مرحلهٔ ۲ (تک‌ستونه)" style="width:1000px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+          <div style="background:#fff;border-bottom:1px solid #E6EAEE;padding:14px 22px;display:flex;gap:0">
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#2F6FA8;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">✓</div><div style="font-size:13px;font-weight:600">محل و وندور</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#EAF3FB;border:2px solid #4A91D4;color:#255E8E;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">۲</div><div style="font-size:13px;font-weight:600;color:#255E8E">دسته‌بندی</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">۳</div><div style="font-size:13px;color:#5B6673">مشخصاتِ فنی</div></div>
+              <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">۴</div><div style="font-size:13px;color:#5B6673">فایل و مهلت</div></div>
+              <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+            </div>
+          </div>
+
+          <div style="padding:40px 22px 48px;display:flex;justify-content:center">
+            <div style="width:100%;max-width:720px;display:flex;flex-direction:column;gap:26px">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="font-size:26px;font-weight:700">دسته‌بندی</div>
+                <div style="font-size:15px;color:#4A5563;line-height:1.9">سه سطح، هر سطح پس از انتخابِ سطحِ قبل باز می‌شود.</div>
+              </div>
+
+              <div style="display:flex;flex-direction:column;gap:16px">
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="font-size:13px;color:#5B6673">سطحِ ۱</div>
+                  <div style="display:flex;flex-wrap:wrap;gap:9px">
+                    <div style="border:2px solid #4A91D4;background:#F7FAFD;font-size:14px;font-weight:600;padding:10px 16px;border-radius:6px">تابلو و پست</div>
+                    <div style="border:1px solid #D4DAE0;background:#fff;font-size:14px;padding:10px 16px;border-radius:6px">ترانسِ توزیع</div>
+                    <div style="border:1px solid #D4DAE0;background:#fff;font-size:14px;padding:10px 16px;border-radius:6px">کابل و سیم</div>
+                    <div style="border:1px solid #D4DAE0;background:#fff;font-size:14px;padding:10px 16px;border-radius:6px">نیروگاهِ خورشیدی</div>
+                    <div style="border:1px solid #D4DAE0;background:#fff;font-size:14px;padding:10px 16px;border-radius:6px">روشناییِ معابر</div>
+                  </div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="font-size:13px;color:#5B6673">سطحِ ۲ — زیرِ «تابلو و پست»</div>
+                  <div style="display:flex;flex-wrap:wrap;gap:9px">
+                    <div style="border:2px solid #4A91D4;background:#F7FAFD;font-size:14px;font-weight:600;padding:10px 16px;border-radius:6px">فشار متوسط</div>
+                    <div style="border:1px solid #D4DAE0;background:#fff;font-size:14px;padding:10px 16px;border-radius:6px">فشار ضعیف</div>
+                    <div style="border:1px solid #D4DAE0;background:#fff;font-size:14px;padding:10px 16px;border-radius:6px">پستِ هوایی</div>
+                  </div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="font-size:13px;color:#5B6673">سطحِ ۳ — زیرِ «فشار متوسط»</div>
+                  <div style="display:flex;flex-wrap:wrap;gap:9px">
+                    <div style="border:2px solid #4A91D4;background:#F7FAFD;font-size:14px;font-weight:600;padding:10px 16px;border-radius:6px">کمپکت</div>
+                    <div style="border:1px solid #D4DAE0;background:#fff;font-size:14px;padding:10px 16px;border-radius:6px">متالکلد</div>
+                    <div style="border:1px solid #D4DAE0;background:#fff;font-size:14px;padding:10px 16px;border-radius:6px">پستِ زمینی</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:8px;overflow:hidden">
+                <div style="padding:14px 16px;border-bottom:1px solid #E6EAEE;display:flex;align-items:center;gap:10px">
+                  <div style="font-size:17px;font-weight:600">همین را می‌خواهید؟</div>
+                  <div style="font-size:13px;color:#5B6673">تابلو و پست ← فشار متوسط ← کمپکت</div>
+                </div>
+                <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#E6EAEE">
+                  <div style="background:#F1F3F5;aspect-ratio:4/3;overflow:hidden"><img src="assets/tablo-3.webp" alt="نمونهٔ تابلو فشار متوسط کمپکت" style="width:100%;height:100%;object-fit:cover"></div>
+                  <div style="background:#F1F3F5;aspect-ratio:4/3;overflow:hidden"><img src="assets/tablo-4.png" alt="نمونهٔ تابلو فشار متوسط کمپکت" style="width:100%;height:100%;object-fit:contain"></div>
+                </div>
+                <div style="padding:14px 16px;display:flex;align-items:center;gap:10px">
+                  <div style="background:#2F6FA8;color:#fff;font-size:14px;font-weight:600;padding:11px 20px;border-radius:6px">بله، همین است</div>
+                  <div style="border:1px solid #D4DAE0;background:#fff;color:#31404F;font-size:14px;padding:11px 18px;border-radius:6px">نه، دستهٔ دیگری می‌خواهم</div>
+                </div>
+              </div>
+
+              <div style="display:flex;align-items:center;gap:12px;border-top:1px solid #E6EAEE;padding-top:20px">
+                <div style="background:#2F6FA8;color:#fff;font-size:15px;font-weight:600;padding:13px 26px;border-radius:6px">مرحلهٔ بعد</div>
+                <div style="border:1px solid #D4DAE0;background:#fff;color:#31404F;font-size:15px;padding:13px 20px;border-radius:6px">مرحلهٔ قبل</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-screen-label="۰۲ فرم — مرحلهٔ ۳ (تک‌ستونه)" style="width:1000px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+          <div style="background:#fff;border-bottom:1px solid #E6EAEE;padding:14px 22px;display:flex;gap:0">
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#2F6FA8;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">✓</div><div style="font-size:13px;font-weight:600">محل و وندور</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#2F6FA8;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">✓</div><div style="font-size:13px;font-weight:600">دسته‌بندی</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#EAF3FB;border:2px solid #4A91D4;color:#255E8E;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">۳</div><div style="font-size:13px;font-weight:600;color:#255E8E">مشخصاتِ فنی</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">۴</div><div style="font-size:13px;color:#5B6673">فایل و مهلت</div></div>
+              <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+            </div>
+          </div>
+
+          <div style="padding:40px 22px 48px;display:flex;justify-content:center">
+            <div style="width:100%;max-width:720px;display:flex;flex-direction:column;gap:30px">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="font-size:26px;font-weight:700">مشخصاتِ فنی</div>
+                <div style="font-size:15px;color:#4A5563;line-height:1.9">فیلدهای همین دسته: تابلو فشار متوسط کمپکت.</div>
+              </div>
+
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="font-size:14px;font-weight:600">نوعِ تابلو <span style="color:#C4514E">*</span></div>
+                  <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:13px 14px;font-size:15px;display:flex;justify-content:space-between"><span>کمپکت گازی (SF6)</span><span style="color:#5B6673;font-size:12px">▾</span></div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="font-size:14px;font-weight:600">سطحِ ولتاژ <span style="color:#C4514E">*</span></div>
+                  <div style="display:flex;border:1px solid #D4DAE0;border-radius:6px;overflow:hidden;background:#fff">
+                    <div style="flex:1;padding:13px;font-size:15px;font-weight:600;text-align:center;background:#EAF3FB;color:#255E8E">۲۰ کیلوولت</div>
+                    <div style="flex:1;padding:13px;font-size:15px;text-align:center;color:#5B6673;border-right:1px solid #D4DAE0">۳۳ کیلوولت</div>
+                  </div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="font-size:14px;font-weight:600">تعدادِ سلول <span style="color:#C4514E">*</span></div>
+                  <div style="border:2px solid #4A91D4;background:#fff;border-radius:6px;padding:12px 14px;font-size:15px;display:flex;justify-content:space-between"><span>۵</span><span style="color:#5B6673;font-size:13px">سلول</span></div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="font-size:14px;font-weight:600">جریانِ نامی</div>
+                  <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:13px 14px;font-size:15px;display:flex;justify-content:space-between"><span>۶۳۰</span><span style="color:#5B6673;font-size:13px">آمپر</span></div>
+                </div>
+              </div>
+
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:8px;overflow:hidden">
+                <div style="padding:14px 16px;border-bottom:1px solid #E6EAEE;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap">
+                  <div style="font-size:16px;font-weight:600">اگر آرایشِ تابلو را می‌دانید</div>
+                  <div style="font-size:13px;color:#5B6673">کاملاً اختیاری — اگر ندانید، خالی می‌ماند و استعلام همچنان معتبر است. ردیف‌ها از راست شماره‌گذاری شده‌اند.</div>
+                </div>
+                <div style="padding:14px 16px;display:flex;flex-direction:column;gap:9px">
+                  <div style="display:flex;align-items:center;gap:12px">
+                    <div style="width:74px;font-size:13px;color:#5B6673;flex:none">سلولِ ۱</div>
+                    <div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:11px 13px;font-size:14px;display:flex;justify-content:space-between"><span>تابلو سکسیونر (ورودی-خروجی)</span><span style="color:#5B6673;font-size:12px">▾</span></div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:12px">
+                    <div style="width:74px;font-size:13px;color:#5B6673;flex:none">سلولِ ۲</div>
+                    <div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:11px 13px;font-size:14px;display:flex;justify-content:space-between"><span>تابلو دژنکتور</span><span style="color:#5B6673;font-size:12px">▾</span></div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:12px">
+                    <div style="width:74px;font-size:13px;color:#5B6673;flex:none">سلولِ ۳</div>
+                    <div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:11px 13px;font-size:14px;display:flex;justify-content:space-between"><span>تابلو اندازه‌گیری</span><span style="color:#5B6673;font-size:12px">▾</span></div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:12px">
+                    <div style="width:74px;font-size:13px;color:#5B6673;flex:none">سلولِ ۴</div>
+                    <div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:11px 13px;font-size:14px;display:flex;justify-content:space-between"><span style="color:#8A939E">انتخاب نشده</span><span style="color:#5B6673;font-size:12px">▾</span></div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:12px">
+                    <div style="width:74px;font-size:13px;color:#5B6673;flex:none">سلولِ ۵</div>
+                    <div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:11px 13px;font-size:14px;display:flex;justify-content:space-between"><span style="color:#8A939E">انتخاب نشده</span><span style="color:#5B6673;font-size:12px">▾</span></div>
+                  </div>
+                  <div style="font-size:12px;color:#5B6673;padding-top:2px">گزینه‌ها: تابلو سکسیونر (ورودی-خروجی) · تابلو دژنکتور · تابلو فیوزدار · تابلو اندازه‌گیری · سلول کوپلاژ</div>
+                </div>
+              </div>
+
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:8px;overflow:hidden">
+                <div style="padding:14px 16px;border-bottom:1px solid #E6EAEE;display:flex;align-items:baseline;gap:10px">
+                  <div style="font-size:16px;font-weight:600">تجهیزاتِ اصلی</div>
+                  <div style="font-size:13px;color:#5B6673">آنچه لازم دارید را تیک بزنید؛ اگر برندی در نظر دارید کنارش بنویسید</div>
+                </div>
+                <div style="display:flex;flex-direction:column">
+                  <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid #EDF0F3">
+                    <div style="width:18px;height:18px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex:none">✓</div>
+                    <div style="font-size:15px;flex:1">ترانسِ جریان</div>
+                    <div style="border:1px solid #D4DAE0;border-radius:6px;padding:8px 11px;font-size:13px;width:190px">ایتال</div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid #EDF0F3">
+                    <div style="width:18px;height:18px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex:none">✓</div>
+                    <div style="font-size:15px;flex:1">رلهٔ حفاظتی</div>
+                    <div style="border:1px solid #D4DAE0;border-radius:6px;padding:8px 11px;font-size:13px;width:190px;color:#8A939E">برندِ دلخواه (اختیاری)</div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid #EDF0F3">
+                    <div style="width:18px;height:18px;border-radius:4px;border:1px solid #C9D1D9;background:#fff;flex:none"></div>
+                    <div style="font-size:15px;flex:1;color:#5B6673">ترانسِ ولتاژ</div>
+                    <div style="border:1px solid #EDF0F3;border-radius:6px;padding:8px 11px;font-size:13px;width:190px;color:#C9D1D9">برندِ دلخواه</div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:12px;padding:12px 16px">
+                    <div style="width:18px;height:18px;border-radius:4px;border:1px solid #C9D1D9;background:#fff;flex:none"></div>
+                    <div style="font-size:15px;flex:1;color:#5B6673">کلیدِ زمین</div>
+                    <div style="border:1px solid #EDF0F3;border-radius:6px;padding:8px 11px;font-size:13px;width:190px;color:#C9D1D9">برندِ دلخواه</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex;align-items:center;gap:12px;border-top:1px solid #E6EAEE;padding-top:20px">
+                <div style="background:#2F6FA8;color:#fff;font-size:15px;font-weight:600;padding:13px 26px;border-radius:6px">مرحلهٔ بعد</div>
+                <div style="border:1px solid #D4DAE0;background:#fff;color:#31404F;font-size:15px;padding:13px 20px;border-radius:6px">مرحلهٔ قبل</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-screen-label="۰۲ فرم — مرحلهٔ ۴ (تک‌ستونه)" style="width:1000px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+          <div style="background:#fff;border-bottom:1px solid #E6EAEE;padding:14px 22px;display:flex;gap:0">
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#2F6FA8;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">✓</div><div style="font-size:13px;font-weight:600">محل و وندور</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#2F6FA8;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">✓</div><div style="font-size:13px;font-weight:600">دسته‌بندی</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#2F6FA8;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">✓</div><div style="font-size:13px;font-weight:600">مشخصاتِ فنی</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#EAF3FB;border:2px solid #4A91D4;color:#255E8E;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">۴</div><div style="font-size:13px;font-weight:600;color:#255E8E">فایل و مهلت</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+          </div>
+
+          <div style="padding:40px 22px 48px;display:flex;justify-content:center">
+            <div style="width:100%;max-width:720px;display:flex;flex-direction:column;gap:30px">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="font-size:26px;font-weight:700">فایل، توضیح و مهلت</div>
+                <div style="font-size:15px;color:#4A5563;line-height:1.9">نقشهٔ تک‌خطی و فایلِ اقلام بیشترین کمک را به کیفیتِ پیشنهادها می‌کنند.</div>
+              </div>
+
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <div style="font-size:14px;font-weight:600">پیوستِ فایل</div>
+                <div style="border:1px dashed #B9C4CE;background:#fff;border-radius:8px;padding:36px;text-align:center;display:flex;flex-direction:column;gap:7px;align-items:center">
+                  <div style="font-size:16px;font-weight:500">فایل‌ها را این‌جا رها کنید</div>
+                  <div style="font-size:13px;color:#5B6673;line-height:1.8">یا <span style="color:#2F73B0;font-weight:600">از دستگاه انتخاب کنید</span><br>تصویر (PNG, JPG) · سند (PDF) · اکسل (XLSX, XLS) · نقشه (DWG, DXF) · فشرده (ZIP)</div>
+                  <div style="font-size:12px;color:#5B6673">تا ۱۰ فایل، هرکدام تا ۲۵ مگابایت · ۳ فایل بارگذاری شده</div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                  <div style="display:flex;align-items:center;gap:12px;border:1px solid #D4DAE0;border-radius:6px;padding:11px 14px;background:#fff">
+                    <div style="font-size:14px;flex:1">نقشهٔ تک‌خطی پست.pdf</div>
+                    <div style="font-size:13px;color:#5B6673;font-variant-numeric:tabular-nums">۲٫۴ مگابایت</div>
+                    <div style="font-size:13px;color:#A8413E">حذف</div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:12px;border:1px solid #D4DAE0;border-radius:6px;padding:11px 14px;background:#fff">
+                    <div style="font-size:14px;flex:1">اقلامِ تابلو.xlsx</div>
+                    <div style="font-size:13px;color:#5B6673;font-variant-numeric:tabular-nums">۱۸۴ کیلوبایت</div>
+                    <div style="font-size:13px;color:#A8413E">حذف</div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:12px;border:1px solid #D4DAE0;border-radius:6px;padding:11px 14px;background:#fff">
+                    <div style="font-size:14px;flex:1">پلانِ محلِ نصب.dwg</div>
+                    <div style="font-size:13px;color:#5B6673;font-variant-numeric:tabular-nums">۶٫۱ مگابایت</div>
+                    <div style="font-size:13px;color:#A8413E">حذف</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex;flex-direction:column;gap:9px">
+                <div style="font-size:14px;font-weight:600">توضیح</div>
+                <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:13px 14px;font-size:15px;line-height:1.9;min-height:110px">محلِ نصب، شهرکِ صنعتیِ توس، فازِ ۲. تحویل درِ کارگاه. امکانِ بازدید از محل روزهای شنبه تا سه‌شنبه هست.</div>
+              </div>
+
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;align-items:baseline;gap:10px">
+                  <div style="font-size:14px;font-weight:600">مهلتِ پاسخ <span style="color:#C4514E">*</span></div>
+                  <div style="font-size:13px;color:#5B6673">پیش‌فرض هفت روز · پس از این تاریخ پیشنهادِ تازه پذیرفته نمی‌شود</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+                  <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:13px 14px;font-size:15px;font-variant-numeric:tabular-nums;width:200px;display:flex;justify-content:space-between"><span>۲۸ مرداد ۱۴۰۴</span><span style="color:#5B6673;font-size:12px">▾</span></div>
+                  <div style="display:flex;border:1px solid #D4DAE0;border-radius:6px;overflow:hidden;background:#fff">
+                    <div style="padding:12px 16px;font-size:14px;color:#5B6673;border-left:1px solid #D4DAE0">۳ روز</div>
+                    <div style="padding:12px 16px;font-size:14px;font-weight:600;background:#EAF3FB;color:#255E8E;border-left:1px solid #D4DAE0">۷ روز</div>
+                    <div style="padding:12px 16px;font-size:14px;color:#5B6673;border-left:1px solid #D4DAE0">۱۴ روز</div>
+                    <div style="padding:12px 16px;font-size:14px;color:#5B6673">۳۰ روز</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex;align-items:center;gap:12px;border-top:1px solid #E6EAEE;padding-top:20px">
+                <div style="background:#2F6FA8;color:#fff;font-size:15px;font-weight:600;padding:13px 26px;border-radius:6px">مرورِ نهایی</div>
+                <div style="border:1px solid #D4DAE0;background:#fff;color:#31404F;font-size:15px;padding:13px 20px;border-radius:6px">مرحلهٔ قبل</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-screen-label="۰۲ فرم — مرورِ نهایی" style="width:1000px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+          <div style="background:#fff;border-bottom:1px solid #E6EAEE;padding:14px 22px;display:flex;align-items:center;gap:12px">
+            <div style="font-size:15px;font-weight:600">مرورِ نهایی</div>
+            <div style="flex:1;height:3px;background:#2F6FA8;border-radius:2px"></div>
+            <div style="font-size:13px;color:#5B6673">چهار مرحله کامل شد</div>
+          </div>
+          <div style="padding:36px 22px 44px;display:flex;justify-content:center">
+            <div style="width:100%;max-width:760px;display:flex;flex-direction:column;gap:18px">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="font-size:26px;font-weight:700">همه‌چیز را یک بار ببینید</div>
+                <div style="font-size:15px;color:#4A5563;line-height:1.9">هر بخش را می‌توانید از همین‌جا اصلاح کنید. پس از ثبت، استعلام برای تأمین‌کنندگانِ همان دسته و استان منتشر می‌شود.</div>
+              </div>
+
+              <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+                <div style="display:flex;align-items:flex-start;gap:16px;padding:16px;border-bottom:1px solid #EDF0F3">
+                  <div style="width:130px;font-size:13px;color:#5B6673;flex:none">محل و وندور</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">خراسان رضوی · توزیع برق شهر مشهد، مطابق با لیستِ توانیر</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:16px;padding:16px;border-bottom:1px solid #EDF0F3">
+                  <div style="width:130px;font-size:13px;color:#5B6673;flex:none">دسته‌بندی</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">تابلو و پست ← فشار متوسط ← کمپکت</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:16px;padding:16px;border-bottom:1px solid #EDF0F3">
+                  <div style="width:130px;font-size:13px;color:#5B6673;flex:none">مشخصاتِ فنی</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">نوعِ تابلو: کمپکت گازی (SF6) · سطحِ ولتاژ: ۲۰ کیلوولت · تعدادِ سلول: ۵ · جریانِ نامی: ۶۳۰ آمپر</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:16px;padding:16px;border-bottom:1px solid #EDF0F3">
+                  <div style="width:130px;font-size:13px;color:#5B6673;flex:none">آرایشِ سلول‌ها</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">۱ سکسیونر (ورودی-خروجی) · ۲ دژنکتور · ۳ اندازه‌گیری · ۴ و ۵ مشخص نشده</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:16px;padding:16px;border-bottom:1px solid #EDF0F3">
+                  <div style="width:130px;font-size:13px;color:#5B6673;flex:none">تجهیزاتِ اصلی</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">ترانسِ جریان (برندِ دلخواه: ایتال) · رلهٔ حفاظتی</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:16px;padding:16px;border-bottom:1px solid #EDF0F3">
+                  <div style="width:130px;font-size:13px;color:#5B6673;flex:none">فایل‌ها</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">نقشهٔ تک‌خطی پست.pdf · اقلامِ تابلو.xlsx · پلانِ محلِ نصب.dwg</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:16px;padding:16px;border-bottom:1px solid #EDF0F3">
+                  <div style="width:130px;font-size:13px;color:#5B6673;flex:none">توضیح</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">محلِ نصب، شهرکِ صنعتیِ توس، فازِ ۲. تحویل درِ کارگاه. امکانِ بازدید از محل روزهای شنبه تا سه‌شنبه هست.</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:16px;padding:16px">
+                  <div style="width:130px;font-size:13px;color:#5B6673;flex:none">مهلت</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9;font-variant-numeric:tabular-nums">۲۸ مرداد ۱۴۰۴ — هفت روز از امروز</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+              </div>
+
+              <div style="display:flex;align-items:center;gap:14px;padding-top:6px">
+                <div style="background:#2F6FA8;color:#fff;font-size:16px;font-weight:600;padding:15px 30px;border-radius:6px">ثبتِ استعلام</div>
+                <div style="font-size:13px;color:#5B6673;line-height:1.8">تا پایانِ مهلت می‌توانید استعلام را لغو کنید، ولی مشخصاتِ فنی پس از ثبت تغییر نمی‌کند.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="2d" style="display:flex;flex-direction:column;gap:14px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="background:#1B2430;color:#fff;font-size:13px;font-weight:600;padding:3px 9px;border-radius:5px">۲د</div>
+        <div style="font-size:18px;font-weight:600">دوستونه — با خلاصهٔ زندهٔ کنارِ دست</div>
+      </div>
+      <div style="font-size:14px;color:#5B6673;max-width:1000px;line-height:1.8">همان چهار مرحله، ولی یک ستونِ باریک در چپ که با هر انتخاب پر می‌شود و از همان‌جا هم قابلِ اصلاح است. کاربر همیشه می‌داند تا کجا آمده؛ در عوض ستونِ فرم باریک‌تر می‌شود و برای فیلدهای فنیِ زیاد جای کمتری می‌ماند.</div>
+
+      <div style="display:flex;flex-direction:column;gap:20px">
+
+        <div data-screen-label="۰۲ فرم — مرحلهٔ ۱ (دوستونه)" style="width:1200px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+          <div style="height:56px;background:#2F6FA8;display:flex;align-items:center;gap:16px;padding:0 22px">
+            <div style="display:flex;align-items:center;gap:9px">
+              <div style="width:32px;height:32px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/logo.png" alt="برقپا" style="width:25px;height:25px;object-fit:contain"></div>
+              <div style="color:#fff;font-size:16px;font-weight:700">برقپا</div>
+            </div>
+            <div style="flex:1"></div>
+            <div style="color:#D8E6F3;font-size:13px">انصراف و بازگشت به داشبورد</div>
+          </div>
+          <div style="background:#fff;border-bottom:1px solid #E6EAEE;padding:14px 22px;display:flex;gap:0">
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#EAF3FB;border:2px solid #4A91D4;color:#255E8E;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">۱</div><div style="font-size:13px;font-weight:600;color:#255E8E">محل و وندور</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">۲</div><div style="font-size:13px;color:#5B6673">دسته‌بندی</div></div>
+              <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">۳</div><div style="font-size:13px;color:#5B6673">مشخصاتِ فنی</div></div>
+              <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">۴</div><div style="font-size:13px;color:#5B6673">فایل و مهلت</div></div>
+              <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+            </div>
+          </div>
+
+          <div style="padding:32px 22px 40px;display:flex;gap:26px;align-items:flex-start">
+            <div style="flex:1;display:flex;flex-direction:column;gap:26px">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="font-size:25px;font-weight:700">محلِ پروژه و وندور</div>
+                <div style="font-size:15px;color:#4A5563;line-height:1.9">اول استان، بعد وندورهای همان استان. حداکثر دو انتخاب.</div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:9px">
+                <div style="font-size:14px;font-weight:600">استانِ پروژه <span style="color:#C4514E">*</span></div>
+                <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:13px 14px;font-size:15px;display:flex;justify-content:space-between"><span>خراسان رضوی</span><span style="color:#5B6673;font-size:12px">▾</span></div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:11px">
+                <div style="display:flex;align-items:baseline;gap:10px">
+                  <div style="font-size:14px;font-weight:600">وندور <span style="color:#C4514E">*</span></div>
+                  <div style="font-size:13px;color:#5B6673">۲ از ۲ انتخاب شد</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:11px;border:2px solid #4A91D4;background:#F7FAFD;border-radius:6px;padding:13px">
+                  <div style="width:18px;height:18px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex:none">✓</div>
+                  <div style="font-size:15px;flex:1">توزیع برق شهر مشهد</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:11px;border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:13px">
+                  <div style="width:18px;height:18px;border-radius:4px;border:1px solid #C9D1D9;flex:none"></div>
+                  <div style="font-size:15px;flex:1">توزیع برق خراسان رضوی</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:11px;border:2px solid #4A91D4;background:#F7FAFD;border-radius:6px;padding:13px">
+                  <div style="width:18px;height:18px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex:none">✓</div>
+                  <div style="font-size:15px;flex:1">مطابق با لیستِ توانیر</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:11px;border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:13px">
+                  <div style="width:18px;height:18px;border-radius:4px;border:1px solid #C9D1D9;flex:none"></div>
+                  <div style="font-size:15px;flex:1;color:#5B6673">پروژهٔ داخلی (عدم نیاز به وندور لیست)</div>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;border-top:1px solid #E6EAEE;padding-top:20px">
+                <div style="background:#2F6FA8;color:#fff;font-size:15px;font-weight:600;padding:13px 26px;border-radius:6px">مرحلهٔ بعد</div>
+              </div>
+            </div>
+
+            <div style="width:320px;background:#fff;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden;flex:none">
+              <div style="padding:13px 14px;border-bottom:1px solid #E6EAEE;font-size:14px;font-weight:600">خلاصهٔ استعلام</div>
+              <div style="padding:14px;display:flex;flex-direction:column;gap:13px">
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <div style="font-size:12px;color:#5B6673">استان</div>
+                  <div style="font-size:14px">خراسان رضوی</div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <div style="font-size:12px;color:#5B6673">وندور</div>
+                  <div style="font-size:14px;line-height:1.8">توزیع برق شهر مشهد<br>مطابق با لیستِ توانیر</div>
+                </div>
+                <div style="height:1px;background:#EDF0F3"></div>
+                <div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:12px;color:#5B6673">دسته‌بندی</div><div style="font-size:14px;color:#8A939E">—</div></div>
+                <div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:12px;color:#5B6673">مشخصاتِ فنی</div><div style="font-size:14px;color:#8A939E">—</div></div>
+                <div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:12px;color:#5B6673">فایل و مهلت</div><div style="font-size:14px;color:#8A939E">—</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-screen-label="۰۲ فرم — مرحلهٔ ۳ (دوستونه)" style="width:1200px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+          <div style="background:#fff;border-bottom:1px solid #E6EAEE;padding:14px 22px;display:flex;gap:0">
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#2F6FA8;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">✓</div><div style="font-size:13px;font-weight:600">محل و وندور</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#2F6FA8;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">✓</div><div style="font-size:13px;font-weight:600">دسته‌بندی</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#EAF3FB;border:2px solid #4A91D4;color:#255E8E;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">۳</div><div style="font-size:13px;font-weight:600;color:#255E8E">مشخصاتِ فنی</div></div>
+              <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+              <div style="display:flex;align-items:center;gap:8px"><div style="width:24px;height:24px;border-radius:50%;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">۴</div><div style="font-size:13px;color:#5B6673">فایل و مهلت</div></div>
+              <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+            </div>
+          </div>
+
+          <div style="padding:32px 22px 40px;display:flex;gap:26px;align-items:flex-start">
+            <div style="flex:1;display:flex;flex-direction:column;gap:24px">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="font-size:25px;font-weight:700">مشخصاتِ فنی</div>
+                <div style="font-size:15px;color:#4A5563;line-height:1.9">فیلدهای همین دسته: تابلو فشار متوسط کمپکت.</div>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="font-size:14px;font-weight:600">نوعِ تابلو <span style="color:#C4514E">*</span></div>
+                  <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:12px 14px;font-size:15px;display:flex;justify-content:space-between"><span>کمپکت گازی (SF6)</span><span style="color:#5B6673;font-size:12px">▾</span></div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="font-size:14px;font-weight:600">سطحِ ولتاژ <span style="color:#C4514E">*</span></div>
+                  <div style="display:flex;border:1px solid #D4DAE0;border-radius:6px;overflow:hidden;background:#fff">
+                    <div style="flex:1;padding:12px;font-size:15px;font-weight:600;text-align:center;background:#EAF3FB;color:#255E8E">۲۰ کیلوولت</div>
+                    <div style="flex:1;padding:12px;font-size:15px;text-align:center;color:#5B6673;border-right:1px solid #D4DAE0">۳۳ کیلوولت</div>
+                  </div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="font-size:14px;font-weight:600">تعدادِ سلول <span style="color:#C4514E">*</span></div>
+                  <div style="border:2px solid #4A91D4;background:#fff;border-radius:6px;padding:11px 14px;font-size:15px;display:flex;justify-content:space-between"><span>۵</span><span style="color:#5B6673;font-size:13px">سلول</span></div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <div style="font-size:14px;font-weight:600">جریانِ نامی</div>
+                  <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:12px 14px;font-size:15px;display:flex;justify-content:space-between"><span>۶۳۰</span><span style="color:#5B6673;font-size:13px">آمپر</span></div>
+                </div>
+              </div>
+
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:8px;overflow:hidden">
+                <div style="padding:13px 15px;border-bottom:1px solid #E6EAEE;display:flex;flex-direction:column;gap:3px">
+                  <div style="font-size:16px;font-weight:600">اگر آرایشِ تابلو را می‌دانید</div>
+                  <div style="font-size:12px;color:#5B6673">اختیاری · ردیف‌ها از راست</div>
+                </div>
+                <div style="padding:13px 15px;display:grid;grid-template-columns:1fr 1fr;gap:9px">
+                  <div style="display:flex;align-items:center;gap:9px"><div style="width:56px;font-size:12px;color:#5B6673;flex:none">سلولِ ۱</div><div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:10px 11px;font-size:13px">سکسیونر (ورودی-خروجی)</div></div>
+                  <div style="display:flex;align-items:center;gap:9px"><div style="width:56px;font-size:12px;color:#5B6673;flex:none">سلولِ ۲</div><div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:10px 11px;font-size:13px">دژنکتور</div></div>
+                  <div style="display:flex;align-items:center;gap:9px"><div style="width:56px;font-size:12px;color:#5B6673;flex:none">سلولِ ۳</div><div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:10px 11px;font-size:13px">اندازه‌گیری</div></div>
+                  <div style="display:flex;align-items:center;gap:9px"><div style="width:56px;font-size:12px;color:#5B6673;flex:none">سلولِ ۴</div><div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:10px 11px;font-size:13px;color:#8A939E">انتخاب نشده</div></div>
+                  <div style="display:flex;align-items:center;gap:9px"><div style="width:56px;font-size:12px;color:#5B6673;flex:none">سلولِ ۵</div><div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:10px 11px;font-size:13px;color:#8A939E">انتخاب نشده</div></div>
+                </div>
+              </div>
+
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:8px;overflow:hidden">
+                <div style="padding:13px 15px;border-bottom:1px solid #E6EAEE;font-size:16px;font-weight:600">تجهیزاتِ اصلی</div>
+                <div style="display:flex;flex-direction:column">
+                  <div style="display:flex;align-items:center;gap:11px;padding:11px 15px;border-bottom:1px solid #EDF0F3">
+                    <div style="width:18px;height:18px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex:none">✓</div>
+                    <div style="font-size:14px;flex:1">ترانسِ جریان</div>
+                    <div style="border:1px solid #D4DAE0;border-radius:6px;padding:7px 10px;font-size:13px;width:150px">ایتال</div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:11px;padding:11px 15px;border-bottom:1px solid #EDF0F3">
+                    <div style="width:18px;height:18px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex:none">✓</div>
+                    <div style="font-size:14px;flex:1">رلهٔ حفاظتی</div>
+                    <div style="border:1px solid #D4DAE0;border-radius:6px;padding:7px 10px;font-size:13px;width:150px;color:#8A939E">برندِ دلخواه</div>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:11px;padding:11px 15px">
+                    <div style="width:18px;height:18px;border-radius:4px;border:1px solid #C9D1D9;flex:none"></div>
+                    <div style="font-size:14px;flex:1;color:#5B6673">ترانسِ ولتاژ</div>
+                    <div style="border:1px solid #EDF0F3;border-radius:6px;padding:7px 10px;font-size:13px;width:150px;color:#C9D1D9">برندِ دلخواه</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex;align-items:center;gap:12px;border-top:1px solid #E6EAEE;padding-top:20px">
+                <div style="background:#2F6FA8;color:#fff;font-size:15px;font-weight:600;padding:13px 26px;border-radius:6px">مرحلهٔ بعد</div>
+                <div style="border:1px solid #D4DAE0;background:#fff;color:#31404F;font-size:15px;padding:13px 20px;border-radius:6px">مرحلهٔ قبل</div>
+              </div>
+            </div>
+
+            <div style="width:320px;background:#fff;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden;flex:none">
+              <div style="padding:13px 14px;border-bottom:1px solid #E6EAEE;font-size:14px;font-weight:600">خلاصهٔ استعلام</div>
+              <div style="padding:14px;display:flex;flex-direction:column;gap:13px">
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <div style="display:flex;align-items:baseline;justify-content:space-between"><div style="font-size:12px;color:#5B6673">استان و وندور</div><div style="font-size:12px;color:#2F73B0;font-weight:600">اصلاح</div></div>
+                  <div style="font-size:14px;line-height:1.8">خراسان رضوی<br>توزیع برق شهر مشهد · توانیر</div>
+                </div>
+                <div style="height:1px;background:#EDF0F3"></div>
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <div style="display:flex;align-items:baseline;justify-content:space-between"><div style="font-size:12px;color:#5B6673">دسته‌بندی</div><div style="font-size:12px;color:#2F73B0;font-weight:600">اصلاح</div></div>
+                  <div style="font-size:14px;line-height:1.8">تابلو و پست ← فشار متوسط ← کمپکت</div>
+                </div>
+                <div style="border:1px solid #E6EAEE;border-radius:6px;overflow:hidden">
+                  <div style="height:110px;background:#F1F3F5;overflow:hidden"><img src="assets/tablo-3.webp" alt="نمونهٔ تابلو" style="width:100%;height:100%;object-fit:cover"></div>
+                  <div style="padding:8px 10px;font-size:12px;color:#5B6673">تصویرِ نمونهٔ دستهٔ انتخاب‌شده</div>
+                </div>
+                <div style="height:1px;background:#EDF0F3"></div>
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <div style="font-size:12px;color:#5B6673">مشخصاتِ فنی</div>
+                  <div style="font-size:14px;line-height:1.8">۲۰ کیلوولت · ۵ سلول · ۶۳۰ آمپر</div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:12px;color:#5B6673">فایل و مهلت</div><div style="font-size:14px;color:#8A939E">—</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-screen-label="۰۲ فرم — مرورِ نهایی (دوستونه)" style="width:1200px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+          <div style="background:#fff;border-bottom:1px solid #E6EAEE;padding:14px 22px;display:flex;align-items:center;gap:12px">
+            <div style="font-size:15px;font-weight:600">مرورِ نهایی</div>
+            <div style="flex:1;height:3px;background:#2F6FA8;border-radius:2px"></div>
+            <div style="font-size:13px;color:#5B6673">چهار مرحله کامل شد</div>
+          </div>
+          <div style="padding:32px 22px 40px;display:flex;gap:26px;align-items:flex-start">
+            <div style="flex:1;display:flex;flex-direction:column;gap:16px">
+              <div style="font-size:25px;font-weight:700">همه‌چیز را یک بار ببینید</div>
+              <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+                <div style="display:flex;align-items:flex-start;gap:14px;padding:15px;border-bottom:1px solid #EDF0F3">
+                  <div style="width:120px;font-size:13px;color:#5B6673;flex:none">محل و وندور</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">خراسان رضوی · توزیع برق شهر مشهد، مطابق با لیستِ توانیر</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:14px;padding:15px;border-bottom:1px solid #EDF0F3">
+                  <div style="width:120px;font-size:13px;color:#5B6673;flex:none">دسته‌بندی</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">تابلو و پست ← فشار متوسط ← کمپکت</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:14px;padding:15px;border-bottom:1px solid #EDF0F3">
+                  <div style="width:120px;font-size:13px;color:#5B6673;flex:none">مشخصاتِ فنی</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">کمپکت گازی (SF6) · ۲۰ کیلوولت · ۵ سلول · ۶۳۰ آمپر · آرایش: سکسیونر، دژنکتور، اندازه‌گیری، دو سلولِ مشخص‌نشده</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:14px;padding:15px;border-bottom:1px solid #EDF0F3">
+                  <div style="width:120px;font-size:13px;color:#5B6673;flex:none">تجهیزات</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">ترانسِ جریان (ایتال) · رلهٔ حفاظتی</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:14px;padding:15px">
+                  <div style="width:120px;font-size:13px;color:#5B6673;flex:none">فایل و مهلت</div>
+                  <div style="flex:1;font-size:14px;line-height:1.9">۳ فایل · مهلت ۲۸ مرداد ۱۴۰۴</div>
+                  <div style="font-size:13px;font-weight:600;color:#2F73B0;flex:none">اصلاح</div>
+                </div>
+              </div>
+            </div>
+            <div style="width:320px;background:#fff;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden;flex:none">
+              <div style="padding:13px 14px;border-bottom:1px solid #E6EAEE;font-size:14px;font-weight:600">آمادهٔ ثبت</div>
+              <div style="padding:14px;display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;align-items:center;gap:9px;font-size:13px;color:#1E6B37"><span style="width:7px;height:7px;border-radius:50%;background:#4CAF63;display:inline-block;flex:none"></span>هر چهار مرحله کامل است</div>
+                <div style="font-size:13px;color:#4A5563;line-height:1.9">با ثبت، استعلام برای تأمین‌کنندگانِ تأییدشدهٔ «تابلو فشار متوسط» در «خراسان رضوی» منتشر و پیامک می‌شود.</div>
+                <div style="background:#2F6FA8;color:#fff;font-size:15px;font-weight:600;padding:13px;border-radius:6px;text-align:center">ثبتِ استعلام</div>
+                <div style="font-size:12px;color:#5B6673;line-height:1.8">تا پایانِ مهلت می‌توانید لغو کنید؛ مشخصاتِ فنی پس از ثبت تغییر نمی‌کند.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#D4DAE0"></div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start">
+
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="font-size:18px;font-weight:600">روی موبایل</div>
+      <div style="font-size:14px;color:#5B6673;max-width:380px;line-height:1.8">همان چهار مرحله، تک‌ستونه. نوارِ پیشرفت به یک خطِ فشرده تبدیل می‌شود و دکمهٔ «مرحلهٔ بعد» پایینِ صفحه می‌چسبد.</div>
+
+      <div data-screen-label="۰۲ فرم — موبایل مرحلهٔ ۳" style="width:390px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:12px;overflow:hidden">
+        <div style="height:52px;background:#2F6FA8;display:flex;align-items:center;justify-content:space-between;padding:0 16px">
+          <div style="display:flex;align-items:center;gap:9px">
+            <div style="width:30px;height:30px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/logo.png" alt="برقپا" style="width:23px;height:23px;object-fit:contain"></div>
+            <div style="color:#fff;font-size:16px;font-weight:700">برقپا</div>
+          </div>
+          <div style="color:#D8E6F3;font-size:13px">انصراف</div>
+        </div>
+        <div style="background:#fff;border-bottom:1px solid #E6EAEE;padding:12px 16px;display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div style="font-size:14px;font-weight:600">مرحلهٔ ۳ از ۴ — مشخصاتِ فنی</div>
+            <div style="font-size:12px;color:#5B6673">۷۵٪</div>
+          </div>
+          <div style="display:flex;gap:5px">
+            <div style="flex:1;height:3px;background:#2F6FA8;border-radius:2px"></div>
+            <div style="flex:1;height:3px;background:#2F6FA8;border-radius:2px"></div>
+            <div style="flex:1;height:3px;background:#2F6FA8;border-radius:2px"></div>
+            <div style="flex:1;height:3px;background:#DFE4E9;border-radius:2px"></div>
+          </div>
+        </div>
+        <div style="padding:18px 16px;display:flex;flex-direction:column;gap:20px">
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="font-size:14px;font-weight:600">نوعِ تابلو <span style="color:#C4514E">*</span></div>
+            <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:14px;font-size:15px;display:flex;justify-content:space-between"><span>کمپکت گازی (SF6)</span><span style="color:#5B6673;font-size:12px">▾</span></div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="font-size:14px;font-weight:600">سطحِ ولتاژ <span style="color:#C4514E">*</span></div>
+            <div style="display:flex;border:1px solid #D4DAE0;border-radius:6px;overflow:hidden;background:#fff">
+              <div style="flex:1;padding:14px;font-size:15px;font-weight:600;text-align:center;background:#EAF3FB;color:#255E8E">۲۰ کیلوولت</div>
+              <div style="flex:1;padding:14px;font-size:15px;text-align:center;color:#5B6673;border-right:1px solid #D4DAE0">۳۳ کیلوولت</div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="font-size:14px;font-weight:600">تعدادِ سلول <span style="color:#C4514E">*</span></div>
+            <div style="border:2px solid #4A91D4;background:#fff;border-radius:6px;padding:13px 14px;font-size:15px;display:flex;justify-content:space-between"><span>۵</span><span style="color:#5B6673;font-size:13px">سلول</span></div>
+          </div>
+          <div style="border:1px solid #D4DAE0;background:#fff;border-radius:8px;overflow:hidden">
+            <div style="padding:12px 14px;border-bottom:1px solid #E6EAEE;display:flex;flex-direction:column;gap:3px">
+              <div style="font-size:15px;font-weight:600">اگر آرایشِ تابلو را می‌دانید</div>
+              <div style="font-size:12px;color:#5B6673">اختیاری · از راست</div>
+            </div>
+            <div style="padding:12px 14px;display:flex;flex-direction:column;gap:9px">
+              <div style="display:flex;align-items:center;gap:10px"><div style="width:52px;font-size:12px;color:#5B6673;flex:none">سلولِ ۱</div><div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:11px;font-size:13px">سکسیونر</div></div>
+              <div style="display:flex;align-items:center;gap:10px"><div style="width:52px;font-size:12px;color:#5B6673;flex:none">سلولِ ۲</div><div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:11px;font-size:13px">دژنکتور</div></div>
+              <div style="display:flex;align-items:center;gap:10px"><div style="width:52px;font-size:12px;color:#5B6673;flex:none">سلولِ ۳</div><div style="flex:1;border:1px solid #D4DAE0;border-radius:6px;padding:11px;font-size:13px;color:#8A939E">انتخاب نشده</div></div>
+            </div>
+          </div>
+        </div>
+        <div style="position:sticky;bottom:0;background:#fff;border-top:1px solid #E6EAEE;padding:12px 16px;display:flex;gap:9px">
+          <div style="border:1px solid #D4DAE0;background:#fff;color:#31404F;font-size:15px;padding:14px 18px;border-radius:6px">قبل</div>
+          <div style="flex:1;background:#2F6FA8;color:#fff;font-size:15px;font-weight:600;padding:14px;border-radius:6px;text-align:center">مرحلهٔ بعد</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px;max-width:700px">
+      <div style="font-size:18px;font-weight:600">خطاها و حالت‌های لبه</div>
+      <div style="font-size:14px;color:#5B6673;line-height:1.8">هر مرحله جداگانه بررسی می‌شود؛ خطا کنارِ همان فیلد گفته می‌شود، نه در یک پیامِ کلیِ بالای صفحه.</div>
+
+      <div data-screen-label="۰۲ فرم — خطای مرحله" style="width:700px;background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="font-size:14px;font-weight:600">وندور <span style="color:#C4514E">*</span></div>
+          <div style="display:flex;align-items:center;gap:11px;border:1px solid #C4514E;background:#FDF7F7;border-radius:6px;padding:13px">
+            <div style="width:18px;height:18px;border-radius:4px;border:1px solid #C9D1D9;background:#fff;flex:none"></div>
+            <div style="font-size:15px;flex:1">توزیع برق شهر مشهد</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#8E3835"><span style="width:5px;height:5px;border-radius:50%;background:#C4514E;display:inline-block"></span>دستِ‌کم یک وندور یا «پروژهٔ داخلی» را انتخاب کنید.</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="font-size:14px;font-weight:600">تعدادِ سلول <span style="color:#C4514E">*</span></div>
+          <div style="border:1px solid #C4514E;background:#FDF7F7;border-radius:6px;padding:12px 14px;font-size:15px;max-width:280px">۰</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#8E3835"><span style="width:5px;height:5px;border-radius:50%;background:#C4514E;display:inline-block"></span>تعدادِ سلول باید عددی بزرگ‌تر از صفر باشد.</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="font-size:14px;font-weight:600">پیوستِ فایل</div>
+          <div style="display:flex;align-items:center;gap:12px;border:1px solid #E3C9C8;border-radius:6px;padding:11px 14px;background:#FDF7F7">
+            <div style="font-size:14px;flex:1;color:#8E3835">آرشیوِ نقشه‌ها.rar</div>
+            <div style="font-size:13px;color:#8E3835;font-variant-numeric:tabular-nums">۳۱ مگابایت</div>
+            <div style="font-size:13px;color:#A8413E">حذف</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#8E3835"><span style="width:5px;height:5px;border-radius:50%;background:#C4514E;display:inline-block"></span>نوعِ این فایل مجاز نیست و از سقفِ ۲۵ مگابایت هم بزرگ‌تر است. فشرده را با فرمتِ ZIP بفرستید.</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;border-top:1px solid #E6EAEE;padding-top:16px">
+          <div style="background:#F1F3F5;border:1px solid #DFE4E9;color:#A8B0B9;font-size:15px;font-weight:600;padding:13px 26px;border-radius:6px">مرحلهٔ بعد</div>
+          <div style="font-size:13px;color:#5B6673">تا فیلدهای اجباریِ همین مرحله پر نشود، دکمه غیرفعال است.</div>
+        </div>
+      </div>
+
+      <div data-screen-label="۰۲ فرم — فرمِ نیمه‌تمام" style="width:700px;background:#fff;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+        <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:#EAF3FB;border-bottom:1px solid #BFDAF0">
+          <span style="width:8px;height:8px;border-radius:50%;background:#4A91D4;display:inline-block;flex:none"></span>
+          <div style="font-size:13px;color:#255E8E;flex:1;line-height:1.8">استعلامِ نیمه‌تمامی از ۲۰ مرداد دارید — تا مرحلهٔ ۳ پیش رفته بودید.</div>
+        </div>
+        <div style="padding:18px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+          <div style="flex:1;min-width:280px;font-size:14px;color:#4A5563;line-height:1.9">تابلو فشار متوسط کمپکت · خراسان رضوی · نوشته‌های شما ذخیره شده است.</div>
+          <div style="background:#2F6FA8;color:#fff;font-size:14px;font-weight:600;padding:11px 20px;border-radius:6px">ادامه از مرحلهٔ ۳</div>
+          <div style="border:1px solid #D4DAE0;background:#fff;color:#31404F;font-size:14px;padding:11px 18px;border-radius:6px">شروعِ تازه</div>
+        </div>
+      </div>
+
+      <div data-screen-label="۰۲ فرم — استانِ بی‌وندور" style="width:700px;background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:12px">
+        <div style="font-size:13px;color:#5B6673">حالتِ خالیِ این فرم: استانی که وندورِ فعالی ندارد</div>
+        <div style="border:1px solid #E6EAEE;background:#FAFBFC;border-radius:8px;padding:26px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center">
+          <div style="font-size:16px;font-weight:600">برای این استان وندوری ثبت نشده است</div>
+          <div style="font-size:14px;color:#4A5563;line-height:1.9;max-width:420px">می‌توانید با «مطابق با لیستِ توانیر» جلو بروید، یا اگر پروژه داخلی است «پروژهٔ داخلی» را انتخاب کنید.</div>
+          <div style="display:flex;gap:9px;padding-top:4px">
+            <div style="border:1px solid #D4DAE0;background:#fff;color:#31404F;font-size:14px;font-weight:500;padding:10px 16px;border-radius:6px">مطابق با لیستِ توانیر</div>
+            <div style="border:1px solid #D4DAE0;background:#fff;color:#31404F;font-size:14px;font-weight:500;padding:10px 16px;border-radius:6px">پروژهٔ داخلی</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>

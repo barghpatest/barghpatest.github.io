@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;padding:0;background:#E9ECEF;font-family:Vazirmatn,Tahoma,sans-serif;direction:rtl;color:#1B2430;text-wrap:pretty}
+  a{color:#2F73B0;text-decoration:none}
+  a:hover{color:#1F5687;text-decoration:underline}
+</style>
+</helmet>
+
+<div style="padding:48px 40px 96px;display:flex;flex-direction:column;gap:52px">
+
+  <div style="display:flex;flex-direction:column;gap:8px;max-width:900px">
+    <div style="font-size:13px;color:#5B6673">پانزده صفحهٔ باقی‌مانده · دورِ ۴</div>
+    <div style="font-size:30px;font-weight:700">سه الگو که بقیهٔ صفحه‌ها از آن‌ها می‌آیند</div>
+    <div style="font-size:15px;color:#4A5563;line-height:1.9">این پانزده صفحه محتوایشان فرق می‌کند، نه ساختارشان. هر کدام یکی از سه الگوی زیر است: فهرست، فرم، یا تأییدِ اپراتور. یک نمونهٔ کاملِ هر الگو این‌جاست و آخرِ صفحه گفته شده کدام صفحه از کدام الگو می‌آید.</div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="background:#1B2430;color:#fff;font-size:13px;font-weight:600;padding:3px 9px;border-radius:5px">الگوی ۱</div>
+      <div style="font-size:20px;font-weight:700">فهرست</div>
+      <div style="font-size:14px;color:#5B6673">نمونه: داشبوردِ خریدار</div>
+    </div>
+    <div style="font-size:14px;color:#5B6673;max-width:1000px;line-height:1.8">همیشه: عنوان و دکمهٔ اصلی در بالا، یک نوارِ فیلتر، جدولِ فشرده با ستونِ وضعیتِ رنگی در آخر، و حالتِ خالی با همان دکمهٔ اصلی در وسط. ستونِ شماره همیشه لینک است.</div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start">
+      <div data-screen-label="۰۴ داشبوردِ خریدار" style="width:1200px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+        <div style="height:56px;background:#2F6FA8;display:flex;align-items:center;gap:24px;padding:0 22px">
+          <div style="display:flex;align-items:center;gap:9px">
+            <div style="width:32px;height:32px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/logo.png" alt="برقپا" style="width:25px;height:25px;object-fit:contain"></div>
+            <div style="color:#fff;font-size:16px;font-weight:700">برقپا</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:20px;font-size:14px">
+            <div style="color:#fff;font-weight:600;padding:4px 0;border-bottom:2px solid #E8D91E">استعلام‌های من</div>
+            <div style="color:#D8E6F3">عضویت</div>
+            <div style="color:#D8E6F3">پروفایل</div>
+          </div>
+          <div style="flex:1"></div>
+          <div style="display:flex;align-items:center;gap:12px">
+            <div style="background:#E8D91E;color:#1B2430;font-size:14px;font-weight:600;padding:7px 14px;border-radius:6px">استعلامِ تازه</div>
+            <div style="color:#fff;font-size:14px">مهندس رضایی</div>
+          </div>
+        </div>
+        <div style="padding:22px;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap">
+            <div style="flex:1;min-width:300px;display:flex;flex-direction:column;gap:6px">
+              <div style="font-size:24px;font-weight:700">استعلام‌های من</div>
+              <div style="font-size:13px;color:#5B6673">۲ استعلامِ باز · ۵ بسته‌شده</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:9px">
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:9px 12px;font-size:14px;display:flex;align-items:center;gap:20px"><span style="color:#5B6673;font-size:13px">وضعیت</span><span>همه</span><span style="color:#5B6673;font-size:11px">▾</span></div>
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:9px 12px;font-size:14px;display:flex;align-items:center;gap:20px"><span style="color:#5B6673;font-size:13px">استان</span><span>همه</span><span style="color:#5B6673;font-size:11px">▾</span></div>
+            </div>
+          </div>
+          <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+            <table style="width:100%;border-collapse:collapse;font-size:14px">
+              <thead>
+                <tr style="background:#FAFBFC;border-bottom:1px solid #E6EAEE">
+                  <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:130px">شماره</th>
+                  <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px">عنوان</th>
+                  <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:170px">دسته</th>
+                  <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:110px">استان</th>
+                  <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:90px">پیشنهاد</th>
+                  <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:150px">مهلت</th>
+                  <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:150px">وضعیت</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom:1px solid #EDF0F3">
+                  <td style="padding:12px;font-variant-numeric:tabular-nums;color:#2F73B0;font-weight:600">ا-۱۴۰۴-۰۲۳۷</td>
+                  <td style="padding:12px">تابلو فشار متوسط کمپکت، ۵ سلول</td>
+                  <td style="padding:12px;color:#5B6673">فشار متوسط ← کمپکت</td>
+                  <td style="padding:12px;color:#5B6673">خراسان رضوی</td>
+                  <td style="padding:12px;font-weight:600;font-variant-numeric:tabular-nums">۷</td>
+                  <td style="padding:12px;font-variant-numeric:tabular-nums">۲۸ مرداد <span style="color:#5F5A0C;background:#FCF8D6;border:1px solid #E4D866;font-size:11px;padding:1px 6px;border-radius:20px">۳ روز</span></td>
+                  <td style="padding:12px"><span style="display:inline-flex;align-items:center;gap:6px;background:#EAF3FB;border:1px solid #BFDAF0;color:#255E8E;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#4A91D4;display:inline-block"></span>باز</span></td>
+                </tr>
+                <tr style="border-bottom:1px solid #EDF0F3">
+                  <td style="padding:12px;font-variant-numeric:tabular-nums;color:#2F73B0;font-weight:600">ا-۱۴۰۴-۰۲۳۰</td>
+                  <td style="padding:12px">ترانسِ توزیع ۴۰۰ کیلوولت‌آمپر</td>
+                  <td style="padding:12px;color:#5B6673">ترانس ← توزیع</td>
+                  <td style="padding:12px;color:#5B6673">خراسان رضوی</td>
+                  <td style="padding:12px;color:#5B6673;font-variant-numeric:tabular-nums">۰</td>
+                  <td style="padding:12px;font-variant-numeric:tabular-nums">۳۰ مرداد <span style="color:#5F5A0C;background:#FCF8D6;border:1px solid #E4D866;font-size:11px;padding:1px 6px;border-radius:20px">۵ روز</span></td>
+                  <td style="padding:12px"><span style="display:inline-flex;align-items:center;gap:6px;background:#EAF3FB;border:1px solid #BFDAF0;color:#255E8E;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#4A91D4;display:inline-block"></span>باز</span></td>
+                </tr>
+                <tr style="border-bottom:1px solid #EDF0F3">
+                  <td style="padding:12px;font-variant-numeric:tabular-nums;color:#2F73B0;font-weight:600">ا-۱۴۰۴-۰۲۰۴</td>
+                  <td style="padding:12px">کابل خودنگهدار ۷۰+۲۵، ۸۰۰ متر</td>
+                  <td style="padding:12px;color:#5B6673">کابل ← فشار ضعیف</td>
+                  <td style="padding:12px;color:#5B6673">یزد</td>
+                  <td style="padding:12px;font-weight:600;font-variant-numeric:tabular-nums">۴</td>
+                  <td style="padding:12px;color:#5B6673;font-variant-numeric:tabular-nums">۱۴ مرداد</td>
+                  <td style="padding:12px"><span style="display:inline-flex;align-items:center;gap:6px;background:#E8F5EC;border:1px solid #B6DFC3;color:#1E6B37;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#4CAF63;display:inline-block"></span>بسته با برنده</span></td>
+                </tr>
+                <tr style="border-bottom:1px solid #EDF0F3">
+                  <td style="padding:12px;font-variant-numeric:tabular-nums;color:#2F73B0;font-weight:600">ا-۱۴۰۴-۰۱۸۸</td>
+                  <td style="padding:12px;color:#5B6673">نیروگاه خورشیدی ۱۰۰ کیلووات</td>
+                  <td style="padding:12px;color:#5B6673">خورشیدی ← اجرا</td>
+                  <td style="padding:12px;color:#5B6673">اصفهان</td>
+                  <td style="padding:12px;color:#5B6673;font-variant-numeric:tabular-nums">۳</td>
+                  <td style="padding:12px;color:#5B6673;font-variant-numeric:tabular-nums">۲ مرداد</td>
+                  <td style="padding:12px"><span style="display:inline-flex;align-items:center;gap:6px;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#A8B0B9;display:inline-block"></span>بسته بدونِ برنده</span></td>
+                </tr>
+                <tr>
+                  <td style="padding:12px;font-variant-numeric:tabular-nums;color:#2F73B0;font-weight:600">ا-۱۴۰۴-۰۱۷۱</td>
+                  <td style="padding:12px;color:#5B6673">روشناییِ محوطه، ۴۰ پایه</td>
+                  <td style="padding:12px;color:#5B6673">روشنایی ← معابر</td>
+                  <td style="padding:12px;color:#5B6673">سمنان</td>
+                  <td style="padding:12px;color:#5B6673;font-variant-numeric:tabular-nums">۱</td>
+                  <td style="padding:12px;color:#5B6673;font-variant-numeric:tabular-nums">۲۵ تیر</td>
+                  <td style="padding:12px"><span style="display:inline-flex;align-items:center;gap:6px;background:#FBEEEE;border:1px solid #E3C9C8;color:#A8413E;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#C4514E;display:inline-block"></span>لغو‌شده</span></td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding:10px 14px;border-top:1px solid #E6EAEE;display:flex;align-items:center;gap:10px">
+              <div style="font-size:12px;color:#5B6673">۵ از ۷ ردیف</div>
+              <div style="flex:1"></div>
+              <div style="border:1px solid #D4DAE0;background:#fff;font-size:13px;padding:5px 11px;border-radius:5px;color:#5B6673">صفحهٔ بعد</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-screen-label="۰۴ داشبوردِ خریدار — خالی" style="width:1200px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+        <div style="padding:22px;display:flex;flex-direction:column;gap:16px">
+          <div style="font-size:24px;font-weight:700">استعلام‌های من</div>
+          <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:56px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
+            <div style="width:44px;height:44px;border:2px dashed #C9D1D9;border-radius:8px"></div>
+            <div style="font-size:19px;font-weight:600">هنوز استعلامی ثبت نکرده‌اید</div>
+            <div style="font-size:14px;color:#4A5563;max-width:460px;line-height:1.9">یک بار مشخصاتِ فنی و نقشه را وارد کنید و چند پیشنهادِ هم‌شکل و قابلِ مقایسه بگیرید.</div>
+            <div style="background:#E8D91E;color:#1B2430;font-size:15px;font-weight:600;padding:13px 24px;border-radius:6px;margin-top:6px">استعلامِ تازه</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#D4DAE0"></div>
+
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="background:#1B2430;color:#fff;font-size:13px;font-weight:600;padding:3px 9px;border-radius:5px">الگوی ۲</div>
+      <div style="font-size:20px;font-weight:700">فرم</div>
+      <div style="font-size:14px;color:#5B6673">نمونه: ثبت‌نام، ورود، و عضویت</div>
+    </div>
+    <div style="font-size:14px;color:#5B6673;max-width:1000px;line-height:1.8">همیشه: یک ستونِ باریکِ وسط‌چین برای فرم‌های کوتاه، برچسبِ بالای فیلد، ستارهٔ قرمز برای اجباری، خطا زیرِ همان فیلد، و یک دکمهٔ اصلی. هیچ فرمی بیش از یک ستون نمی‌شود مگر فرمِ استعلام.</div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start">
+
+      <div data-screen-label="۰۲ ثبت‌نام" style="width:520px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+        <div style="height:52px;background:#2F6FA8;display:flex;align-items:center;gap:9px;padding:0 18px">
+          <div style="width:30px;height:30px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/logo.png" alt="برقپا" style="width:23px;height:23px;object-fit:contain"></div>
+          <div style="color:#fff;font-size:16px;font-weight:700">برقپا</div>
+          <div style="flex:1"></div>
+          <div style="color:#D8E6F3;font-size:13px">حساب دارید؟ ورود</div>
+        </div>
+        <div style="padding:28px 24px 32px;display:flex;flex-direction:column;gap:18px">
+          <div style="display:flex;flex-direction:column;gap:7px">
+            <div style="font-size:23px;font-weight:700">ثبت‌نام</div>
+            <div style="font-size:14px;color:#4A5563;line-height:1.9">حساب بلافاصله فعال می‌شود و می‌توانید استعلام بزنید. اگر بعداً خواستید بفروشید، از تبِ «افتتاحِ شرکت» درخواست می‌دهید.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;flex-direction:column;gap:7px">
+              <div style="font-size:13px;font-weight:500">نام‌کاربری <span style="color:#C4514E">*</span></div>
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:12px 13px;font-size:15px">rezaei.parsا</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px">
+              <div style="font-size:13px;font-weight:500">گذرواژه <span style="color:#C4514E">*</span></div>
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:12px 13px;font-size:15px;color:#5B6673">••••••••</div>
+              <div style="font-size:12px;color:#5B6673">دستِ‌کم هشت نویسه</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px">
+              <div style="font-size:13px;font-weight:500">نامِ کامل <span style="color:#C4514E">*</span></div>
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:12px 13px;font-size:15px">علی رضایی</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px">
+              <div style="font-size:13px;font-weight:500">نامِ شرکت <span style="color:#C4514E">*</span></div>
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:12px 13px;font-size:15px">پیمانکاریِ رضایی</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px">
+              <div style="font-size:13px;font-weight:500">شمارهٔ موبایل <span style="color:#C4514E">*</span></div>
+              <div style="border:1px solid #C4514E;background:#FDF7F7;border-radius:6px;padding:12px 13px;font-size:15px;font-variant-numeric:tabular-nums">۰۹۱۵۱۲۳۴۵۶۷</div>
+              <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:#8E3835"><span style="width:5px;height:5px;border-radius:50%;background:#C4514E;display:inline-block"></span>این شماره قبلاً ثبت شده است. اگر حسابتان است، وارد شوید.</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px">
+              <div style="font-size:13px;font-weight:500">ایمیل</div>
+              <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:12px 13px;font-size:15px;color:#8A939E">اختیاری</div>
+            </div>
+          </div>
+          <div style="background:#2F6FA8;color:#fff;font-size:15px;font-weight:600;padding:14px;border-radius:6px;text-align:center">ساختنِ حساب</div>
+          <div style="font-size:12px;color:#5B6673;line-height:1.8">شمارهٔ موبایل فقط برای اطلاع‌رسانیِ پیامکی به کار می‌رود و با پیامک تأیید نمی‌شود.</div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div data-screen-label="۰۳ ورود" style="width:520px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+          <div style="height:52px;background:#2F6FA8;display:flex;align-items:center;gap:9px;padding:0 18px">
+            <div style="width:30px;height:30px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/logo.png" alt="برقپا" style="width:23px;height:23px;object-fit:contain"></div>
+            <div style="color:#fff;font-size:16px;font-weight:700">برقپا</div>
+          </div>
+          <div style="padding:28px 24px 30px;display:flex;flex-direction:column;gap:18px">
+            <div style="font-size:23px;font-weight:700">ورود</div>
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <div style="display:flex;flex-direction:column;gap:7px">
+                <div style="font-size:13px;font-weight:500">نام‌کاربری</div>
+                <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:12px 13px;font-size:15px">parsswitch</div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:7px">
+                <div style="font-size:13px;font-weight:500">گذرواژه</div>
+                <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:12px 13px;font-size:15px;color:#5B6673">••••••••</div>
+              </div>
+            </div>
+            <div style="background:#2F6FA8;color:#fff;font-size:15px;font-weight:600;padding:14px;border-radius:6px;text-align:center">ورود</div>
+            <div style="display:flex;align-items:flex-start;gap:10px;padding:12px 14px;background:#EAF3FB;border:1px solid #BFDAF0;border-radius:6px">
+              <span style="width:8px;height:8px;border-radius:50%;background:#4A91D4;display:inline-block;flex:none;margin-top:5px"></span>
+              <div style="font-size:13px;color:#255E8E;line-height:1.9;flex:1">حسابِ شما ثبت شد و در انتظارِ تأییدِ ماست. پس از تأیید پیامک می‌گیرید. تا آن موقع می‌توانید استعلام بزنید، ولی پیشنهاد دادن فعال نیست.</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#8E3835"><span style="width:5px;height:5px;border-radius:50%;background:#C4514E;display:inline-block"></span>نام‌کاربری یا گذرواژه درست نیست.</div>
+          </div>
+        </div>
+
+        <div data-screen-label="۲۰ عضویت" style="width:520px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+          <div style="background:#fff;border-bottom:1px solid #E6EAEE;padding:0 18px;display:flex;gap:22px">
+            <div style="padding:13px 0;font-size:14px;color:#5B6673">مشخصات</div>
+            <div style="padding:13px 0;font-size:14px;font-weight:600;color:#255E8E;border-bottom:2px solid #2F6FA8">عضویت</div>
+            <div style="padding:13px 0;font-size:14px;color:#5B6673">مدیریتِ شرکت</div>
+          </div>
+          <div style="padding:22px 20px 26px;display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:#F1F3F5;border:1px solid #DFE4E9;border-radius:6px">
+              <span style="width:8px;height:8px;border-radius:50%;background:#A8B0B9;display:inline-block;flex:none"></span>
+              <div style="font-size:14px;flex:1">طرحِ فعلیِ شما: <b style="font-weight:600">رایگان</b></div>
+            </div>
+            <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:12px">
+              <div style="font-size:16px;font-weight:600">ارتقا به طرحِ غیررایگان</div>
+              <div style="font-size:14px;color:#4A5563;line-height:1.9">با ارتقا، نامِ شرکتِ پیشنهاددهنده و پیوستِ پیشنهادها برای شما باز می‌شود؛ و در سمتِ فروش، نامِ شرکت و شمارهٔ تماسِ خریدار. یک ارتقا هر دو سمت را باز می‌کند.</div>
+              <div style="display:flex;flex-direction:column;gap:9px;border-top:1px solid #EDF0F3;padding-top:12px">
+                <div style="display:flex;gap:14px"><div style="width:110px;font-size:13px;color:#5B6673;flex:none">مبلغ</div><div style="font-size:15px;font-weight:700;font-variant-numeric:tabular-nums">۴٬۵۰۰٬۰۰۰ تومان</div></div>
+                <div style="display:flex;gap:14px"><div style="width:110px;font-size:13px;color:#5B6673;flex:none">شمارهٔ کارت</div><div style="font-size:15px;font-variant-numeric:tabular-nums">۶۲۱۹ ۸۶۱۰ ۱۲۳۴ ۵۶۷۸</div></div>
+                <div style="display:flex;gap:14px"><div style="width:110px;font-size:13px;color:#5B6673;flex:none">شمارهٔ حساب</div><div style="font-size:15px;font-variant-numeric:tabular-nums">۰۲۰۱٬۲۳۴۵٬۶۷</div></div>
+                <div style="font-size:12px;color:#5B6673;line-height:1.8">پرداختِ آنلاین وجود ندارد. واریز بیرونِ سکو انجام می‌شود و شما تصویرِ رسید را بارگذاری می‌کنید.</div>
+              </div>
+              <div style="border:1px dashed #B9C4CE;background:#FAFBFC;border-radius:6px;padding:22px;text-align:center;display:flex;flex-direction:column;gap:5px">
+                <div style="font-size:14px;font-weight:500">تصویرِ رسید را این‌جا رها کنید</div>
+                <div style="font-size:12px;color:#5B6673">PNG یا JPG · تا ۲۵ مگابایت</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:#FCF8D6;border:1px solid #E4D866;border-radius:6px">
+              <span style="width:8px;height:8px;border-radius:50%;background:#E8D91E;display:inline-block;flex:none"></span>
+              <div style="font-size:13px;color:#3F4753;flex:1;line-height:1.8">آخرین درخواست: ۲۳ مرداد ۱۴۰۴ — در انتظارِ تأییدِ اپراتور</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#D4DAE0"></div>
+
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="background:#1B2430;color:#fff;font-size:13px;font-weight:600;padding:3px 9px;border-radius:5px">الگوی ۳</div>
+      <div style="font-size:20px;font-weight:700">تأییدِ اپراتور</div>
+      <div style="font-size:14px;color:#5B6673">نمونه: تأییدِ تأمین‌کنندگان</div>
+    </div>
+    <div style="font-size:14px;color:#5B6673;max-width:1000px;line-height:1.8">همیشه: چهار عددِ کارِ امروز در بالا، فهرستِ درخواست‌ها، و ردیفی که باز می‌شود و همه‌چیزِ لازم برای تصمیم را نشان می‌دهد — با دو دکمهٔ «تأیید» و «رد (با دلیل)». اپراتور می‌تواند حوزهٔ کاری را پیش از تأیید اصلاح کند.</div>
+
+    <div data-screen-label="۱۴ تأییدِ تأمین‌کنندگان" style="width:1240px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+      <div style="height:56px;background:#2F6FA8;display:flex;align-items:center;gap:24px;padding:0 22px">
+        <div style="display:flex;align-items:center;gap:9px">
+          <div style="width:32px;height:32px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/logo.png" alt="برقپا" style="width:25px;height:25px;object-fit:contain"></div>
+          <div style="color:#fff;font-size:16px;font-weight:700">برقپا</div>
+          <div style="background:#255E8E;color:#fff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:20px">اپراتور</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:18px;font-size:14px">
+          <div style="color:#fff;font-weight:600;padding:4px 0;border-bottom:2px solid #E8D91E">تأییدِ تأمین‌کنندگان</div>
+          <div style="color:#D8E6F3">عضویت‌ها</div>
+          <div style="color:#D8E6F3">دسته‌بندی</div>
+          <div style="color:#D8E6F3">وندورها</div>
+          <div style="color:#D8E6F3">همهٔ استعلام‌ها</div>
+          <div style="color:#D8E6F3">تنظیمات</div>
+        </div>
+      </div>
+
+      <div style="padding:22px;display:flex;flex-direction:column;gap:18px">
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
+          <div style="background:#fff;border:1px solid #4A91D4;border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:6px">
+            <div style="font-size:13px;color:#5B6673">تأمین‌کنندگانِ در انتظار</div>
+            <div style="font-size:30px;font-weight:700;color:#255E8E;font-variant-numeric:tabular-nums">۴</div>
+          </div>
+          <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:6px">
+            <div style="font-size:13px;color:#5B6673">درخواست‌های عضویت</div>
+            <div style="font-size:30px;font-weight:700;font-variant-numeric:tabular-nums">۲</div>
+          </div>
+          <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:6px">
+            <div style="font-size:13px;color:#5B6673">استعلام‌های باز</div>
+            <div style="font-size:30px;font-weight:700;font-variant-numeric:tabular-nums">۱۷</div>
+          </div>
+          <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:6px">
+            <div style="font-size:13px;color:#5B6673">پیشنهادهای امروز</div>
+            <div style="font-size:30px;font-weight:700;font-variant-numeric:tabular-nums">۹</div>
+          </div>
+        </div>
+
+        <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+          <div style="padding:12px 15px;border-bottom:1px solid #E6EAEE;display:flex;align-items:center;gap:10px">
+            <div style="font-size:15px;font-weight:600">درخواست‌های افتتاحِ شرکت</div>
+            <div style="font-size:13px;color:#5B6673">۴ در انتظار</div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:14px;padding:13px 15px;border-bottom:1px solid #EDF0F3;background:#FAFBFC">
+            <div style="font-size:14px;font-weight:600;flex:1">صنایع تابلوسازی پارس</div>
+            <div style="font-size:13px;color:#5B6673;width:150px">مشهد · ۰۵۱ ۳۷۶۵۴۳۲۱</div>
+            <div style="font-size:13px;color:#5B6673;width:120px;font-variant-numeric:tabular-nums">۲۰ مرداد ۱۴۰۴</div>
+            <div style="background:#FCF8D6;border:1px solid #E4D866;color:#5F5A0C;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px">در انتظارِ تأیید</div>
+            <div style="color:#5B6673;font-size:12px">▴ بستن</div>
+          </div>
+
+          <div style="padding:18px 15px;border-bottom:1px solid #E6EAEE;display:flex;gap:20px;align-items:flex-start;background:#fff">
+            <div style="flex:1;display:flex;flex-direction:column;gap:16px">
+              <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px">
+                <div style="display:flex;flex-direction:column;gap:3px"><div style="font-size:12px;color:#5B6673">نامِ شرکت</div><div style="font-size:14px">صنایع تابلوسازی پارس</div></div>
+                <div style="display:flex;flex-direction:column;gap:3px"><div style="font-size:12px;color:#5B6673">کاربر</div><div style="font-size:14px">علی رضایی · ۰۹۱۵۱۲۳۴۵۶۷</div></div>
+                <div style="display:flex;flex-direction:column;gap:3px"><div style="font-size:12px;color:#5B6673">تلفنِ ثابت</div><div style="font-size:14px;font-variant-numeric:tabular-nums">۰۵۱ ۳۷۶۵۴۳۲۱</div></div>
+                <div style="display:flex;flex-direction:column;gap:3px"><div style="font-size:12px;color:#5B6673">کدِ نمایشی</div><div style="font-size:14px;font-variant-numeric:tabular-nums">ت-۰۳۷</div></div>
+                <div style="grid-column:span 2;display:flex;flex-direction:column;gap:3px"><div style="font-size:12px;color:#5B6673">نشانی</div><div style="font-size:14px;line-height:1.8">مشهد، شهرکِ صنعتیِ توس، فازِ ۲، خیابانِ تلاش شمالی، پلاکِ ۱۴</div></div>
+              </div>
+
+              <div style="display:flex;align-items:center;gap:12px;border:1px solid #D4DAE0;border-radius:6px;padding:11px 13px">
+                <div style="font-size:14px;flex:1">فرمِ بارگذاری‌شده — پارس-فرم-امضاشده.pdf</div>
+                <div style="font-size:13px;color:#5B6673;font-variant-numeric:tabular-nums">۱٫۸ مگابایت</div>
+                <div style="background:#2F6FA8;color:#fff;font-size:13px;font-weight:600;padding:7px 14px;border-radius:6px">دانلود</div>
+              </div>
+
+              <div style="border:1px solid #E6EAEE;border-radius:6px;overflow:hidden">
+                <div style="padding:11px 13px;background:#FAFBFC;border-bottom:1px solid #EDF0F3;display:flex;align-items:baseline;gap:10px">
+                  <div style="font-size:14px;font-weight:600">حوزهٔ کاریِ اعلام‌شده</div>
+                  <div style="font-size:12px;color:#5B6673">پیش از تأیید می‌توانید اصلاحش کنید</div>
+                </div>
+                <div style="padding:13px;display:flex;flex-direction:column;gap:11px">
+                  <div style="display:flex;flex-direction:column;gap:7px">
+                    <div style="font-size:12px;color:#5B6673">دسته‌ها — ۴ مورد</div>
+                    <div style="display:flex;flex-wrap:wrap;gap:7px">
+                      <div style="display:flex;align-items:center;gap:7px;border:2px solid #4A91D4;background:#F7FAFD;border-radius:6px;padding:6px 10px"><div style="width:15px;height:15px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:10px;display:flex;align-items:center;justify-content:center;flex:none">✓</div><div style="font-size:13px">فشار متوسط ← کمپکت</div></div>
+                      <div style="display:flex;align-items:center;gap:7px;border:2px solid #4A91D4;background:#F7FAFD;border-radius:6px;padding:6px 10px"><div style="width:15px;height:15px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:10px;display:flex;align-items:center;justify-content:center;flex:none">✓</div><div style="font-size:13px">فشار متوسط ← متالکلد</div></div>
+                      <div style="display:flex;align-items:center;gap:7px;border:2px solid #4A91D4;background:#F7FAFD;border-radius:6px;padding:6px 10px"><div style="width:15px;height:15px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:10px;display:flex;align-items:center;justify-content:center;flex:none">✓</div><div style="font-size:13px">فشار متوسط ← پستِ کمپکت</div></div>
+                      <div style="display:flex;align-items:center;gap:7px;border:2px solid #4A91D4;background:#F7FAFD;border-radius:6px;padding:6px 10px"><div style="width:15px;height:15px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:10px;display:flex;align-items:center;justify-content:center;flex:none">✓</div><div style="font-size:13px">فشار ضعیف ← توزیع</div></div>
+                      <div style="border:1px solid #D4DAE0;background:#fff;color:#2F73B0;font-size:13px;font-weight:600;padding:7px 11px;border-radius:6px">افزودنِ دسته</div>
+                    </div>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:7px">
+                    <div style="font-size:12px;color:#5B6673">استان‌ها — ۳ مورد</div>
+                    <div style="display:flex;flex-wrap:wrap;gap:7px">
+                      <div style="display:flex;align-items:center;gap:7px;border:2px solid #4A91D4;background:#F7FAFD;border-radius:6px;padding:6px 10px"><div style="width:15px;height:15px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:10px;display:flex;align-items:center;justify-content:center;flex:none">✓</div><div style="font-size:13px">خراسان رضوی</div></div>
+                      <div style="display:flex;align-items:center;gap:7px;border:2px solid #4A91D4;background:#F7FAFD;border-radius:6px;padding:6px 10px"><div style="width:15px;height:15px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:10px;display:flex;align-items:center;justify-content:center;flex:none">✓</div><div style="font-size:13px">خراسان شمالی</div></div>
+                      <div style="display:flex;align-items:center;gap:7px;border:2px solid #4A91D4;background:#F7FAFD;border-radius:6px;padding:6px 10px"><div style="width:15px;height:15px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:10px;display:flex;align-items:center;justify-content:center;flex:none">✓</div><div style="font-size:13px">سمنان</div></div>
+                      <div style="border:1px solid #D4DAE0;background:#fff;color:#2F73B0;font-size:13px;font-weight:600;padding:7px 11px;border-radius:6px">افزودنِ استان</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="width:300px;flex:none;display:flex;flex-direction:column;gap:12px">
+              <div style="border:1px solid #B6DFC3;background:#F4FAF6;border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:10px">
+                <div style="font-size:14px;font-weight:600;color:#1E6B37">تأییدِ درخواست</div>
+                <div style="font-size:13px;color:#31404F;line-height:1.9">با تأیید، فروش برای این حساب فعال می‌شود، تبِ کاربر به «مدیریتِ شرکت» تغییرِ نام می‌دهد و پیامک می‌رود.</div>
+                <div style="background:#2F8347;color:#fff;font-size:14px;font-weight:600;padding:11px;border-radius:6px;text-align:center">تأیید</div>
+              </div>
+              <div style="border:1px solid #E3C9C8;border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:10px">
+                <div style="font-size:14px;font-weight:600;color:#8E3835">ردِ درخواست</div>
+                <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:11px;font-size:13px;color:#8A939E;min-height:74px;line-height:1.8">دلیلِ رد — برای کاربر نمایش داده می‌شود</div>
+                <div style="border:1px solid #E3C9C8;background:#fff;color:#A8413E;font-size:14px;font-weight:500;padding:11px;border-radius:6px;text-align:center">رد با دلیل</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:14px;padding:13px 15px;border-bottom:1px solid #EDF0F3">
+            <div style="font-size:14px;font-weight:600;flex:1">فنی مهندسی نیروگستر</div>
+            <div style="font-size:13px;color:#5B6673;width:150px">سمنان · ۰۲۳ ۳۳۴۴۵۵۶۶</div>
+            <div style="font-size:13px;color:#5B6673;width:120px;font-variant-numeric:tabular-nums">۱۹ مرداد ۱۴۰۴</div>
+            <div style="background:#FCF8D6;border:1px solid #E4D866;color:#5F5A0C;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px">در انتظارِ تأیید</div>
+            <div style="color:#5B6673;font-size:12px">▾ باز کردن</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;padding:13px 15px;border-bottom:1px solid #EDF0F3">
+            <div style="font-size:14px;font-weight:600;flex:1">بازرگانی کابل شرق</div>
+            <div style="font-size:13px;color:#5B6673;width:150px">مشهد · ۰۵۱ ۳۸۱۱۲۲۳۳</div>
+            <div style="font-size:13px;color:#5B6673;width:120px;font-variant-numeric:tabular-nums">۱۸ مرداد ۱۴۰۴</div>
+            <div style="background:#FCF8D6;border:1px solid #E4D866;color:#5F5A0C;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px">در انتظارِ تأیید</div>
+            <div style="color:#5B6673;font-size:12px">▾ باز کردن</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;padding:13px 15px;background:#FAFAFA">
+            <div style="font-size:14px;font-weight:600;flex:1;color:#5B6673">تجهیزات برق آریا</div>
+            <div style="font-size:13px;color:#5B6673;width:150px">یزد · ۰۳۵ ۳۷۲۲۱۱۰۰</div>
+            <div style="font-size:13px;color:#5B6673;width:120px;font-variant-numeric:tabular-nums">۱۵ مرداد ۱۴۰۴</div>
+            <div style="background:#FBEEEE;border:1px solid #E3C9C8;color:#A8413E;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px">ردشده</div>
+            <div style="color:#5B6673;font-size:12px">▾ باز کردن</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:1px;background:#D4DAE0"></div>
+
+  <div style="display:flex;flex-direction:column;gap:16px;max-width:1000px">
+    <div style="font-size:20px;font-weight:700">کدام صفحه از کدام الگو</div>
+    <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+      <table style="width:100%;border-collapse:collapse;font-size:14px">
+        <thead>
+          <tr style="background:#FAFBFC;border-bottom:1px solid #E6EAEE">
+            <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:10px 14px;width:60px">#</th>
+            <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:10px 14px">صفحه</th>
+            <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:10px 14px;width:150px">الگو</th>
+            <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:10px 14px">تفاوتش با نمونه</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۲</td><td style="padding:11px 14px">ثبت‌نام</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فرم</td><td style="padding:11px 14px;color:#5B6673">همان نمونه است</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۳</td><td style="padding:11px 14px">ورود</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فرم</td><td style="padding:11px 14px;color:#5B6673">همان نمونه است</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۴</td><td style="padding:11px 14px">داشبوردِ خریدار</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فهرست</td><td style="padding:11px 14px;color:#5B6673">همان نمونه است</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۶</td><td style="padding:11px 14px">استعلامِ من</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فهرست</td><td style="padding:11px 14px;color:#5B6673">بالای صفحه مشخصاتِ استعلام، پایینش جدولِ مقایسه (صفحهٔ ۰۳)</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۱۰</td><td style="padding:11px 14px">استعلام برایِ تأمین‌کننده</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فرم</td><td style="padding:11px 14px;color:#5B6673">در فایلِ ۰۵ کامل طراحی شده</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۱۱</td><td style="padding:11px 14px">فرمِ پیشنهاد</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فرم</td><td style="padding:11px 14px;color:#5B6673">دوستونه چون فیلدها عددی و کوتاه‌اند؛ در فایلِ ۰۵</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۱۳</td><td style="padding:11px 14px">داشبوردِ اپراتور</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">تأییدِ اپراتور</td><td style="padding:11px 14px;color:#5B6673">فقط همان چهار عدد، هرکدام لینک</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۱۴</td><td style="padding:11px 14px">تأییدِ تأمین‌کنندگان</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">تأییدِ اپراتور</td><td style="padding:11px 14px;color:#5B6673">همان نمونه است</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۱۵</td><td style="padding:11px 14px">تأییدِ عضویت‌ها</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">تأییدِ اپراتور</td><td style="padding:11px 14px;color:#5B6673">جای فرمِ PDF، تصویرِ رسید که با کلیک بزرگ می‌شود</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۱۶</td><td style="padding:11px 14px">مدیریتِ دسته‌بندی</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فهرست + فرم</td><td style="padding:11px 14px;color:#5B6673">درخت در راست، ویرایشِ همان دسته در چپ: تصویرِ نمونه، فیلدهای فنی، تجهیزات</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۱۷</td><td style="padding:11px 14px">مدیریتِ وندورها</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فهرست</td><td style="padding:11px 14px;color:#5B6673">ستون‌ها: نام، استان، سراسری، فعال · ۳۹ شرکت + توانیر</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۱۸</td><td style="padding:11px 14px">تنظیماتِ سکو</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فرم</td><td style="padding:11px 14px;color:#5B6673">متنِ عضویت، مبلغ، شمارهٔ کارت و حساب، بارگذاریِ فرمِ افتتاحِ شرکت</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۱۹</td><td style="padding:11px 14px">همهٔ استعلام‌ها</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فهرست</td><td style="padding:11px 14px;color:#5B6673">مثلِ داشبوردِ خریدار به‌علاوهٔ ستونِ خریدار و فیلترِ دسته — بدونِ دکمهٔ برنده و ردِ فنی</td></tr>
+          <tr style="border-bottom:1px solid #EDF0F3"><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۲۰</td><td style="padding:11px 14px">عضویت</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فرم</td><td style="padding:11px 14px;color:#5B6673">همان نمونه است</td></tr>
+          <tr><td style="padding:11px 14px;color:#5B6673;font-variant-numeric:tabular-nums">۲۱</td><td style="padding:11px 14px">پروفایل</td><td style="padding:11px 14px;color:#255E8E;font-weight:600">فرم</td><td style="padding:11px 14px;color:#5B6673">سه تب؛ تبِ سوم در فایلِ ۰۶ طراحی شده</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="font-size:13px;color:#5B6673;line-height:1.9">نکتهٔ ثابتِ همهٔ این صفحه‌ها: حالتِ خالی هیچ‌وقت یک جدولِ خالی نیست، خطا کنارِ همان فیلد می‌آید، و روی موبایل جدول به کارت تبدیل می‌شود.</div>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>

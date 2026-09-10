@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;padding:0;background:#F5F6F8;font-family:Vazirmatn,Tahoma,sans-serif;direction:rtl;color:#1B2430;text-wrap:pretty}
+  a{color:#2F73B0;text-decoration:none}
+  a:hover{color:#1F5687;text-decoration:underline}
+</style>
+</helmet>
+
+<div style="max-width:1120px;margin:0 auto;padding:40px 24px 96px;display:flex;flex-direction:column;gap:40px">
+
+  <div style="display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap">
+    <div style="width:56px;height:56px;background:#fff;border:1px solid #D4DAE0;border-radius:8px;display:flex;align-items:center;justify-content:center;flex:none">
+      <img src="assets/logo.png" alt="برقپا" style="width:42px;height:42px;object-fit:contain">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;flex:1;min-width:280px">
+      <div style="font-size:13px;color:#5B6673">راهنمای اجزا · دورِ ۱</div>
+      <div style="font-size:28px;font-weight:700">اجزای رابطِ برقپا</div>
+      <div style="font-size:15px;color:#4A5563;line-height:1.9">هر چیزی که در بیست‌ویک صفحه تکرار می‌شود، یک بار این‌جا تعریف شده است. صفحه‌ها فقط از همین‌ها ساخته می‌شوند.</div>
+    </div>
+  </div>
+
+  <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:18px">
+    <div style="font-size:18px;font-weight:600">رنگ</div>
+    <div style="display:flex;flex-wrap:wrap;gap:14px">
+      <div style="width:170px;display:flex;flex-direction:column;gap:8px">
+        <div style="height:56px;background:#2F6FA8;border-radius:6px"></div>
+        <div style="font-size:13px;font-weight:600">آبیِ اصلی</div>
+        <div style="font-size:12px;color:#5B6673;line-height:1.7">نوارِ بالا، دکمهٔ اصلی، لینک. <span style="font-variant-numeric:tabular-nums">‎#2F6FA8</span> — تیره‌ترِ آبیِ لوگو، برایِ خوانا بودنِ متنِ سفید.</div>
+      </div>
+      <div style="width:170px;display:flex;flex-direction:column;gap:8px">
+        <div style="height:56px;background:#4A91D4;border-radius:6px"></div>
+        <div style="font-size:13px;font-weight:600">آبیِ لوگو</div>
+        <div style="font-size:12px;color:#5B6673;line-height:1.7">وضعیتِ «باز»، نشانگرها، خطِ تأکیدِ ستونِ رتبهٔ ۱. <span style="font-variant-numeric:tabular-nums">‎#4A91D4</span></div>
+      </div>
+      <div style="width:170px;display:flex;flex-direction:column;gap:8px">
+        <div style="height:56px;background:#E8D91E;border-radius:6px"></div>
+        <div style="font-size:13px;font-weight:600">زردِ تأکید</div>
+        <div style="font-size:12px;color:#5B6673;line-height:1.7">فقط «استعلامِ تازه»، روزهای مانده، نوارِ دعوت. متن رویش تیره. <span style="font-variant-numeric:tabular-nums">‎#E8D91E</span></div>
+      </div>
+      <div style="width:170px;display:flex;flex-direction:column;gap:8px">
+        <div style="height:56px;background:#4CAF63;border-radius:6px"></div>
+        <div style="font-size:13px;font-weight:600">سبزِ خبرِ خوب</div>
+        <div style="font-size:12px;color:#5B6673;line-height:1.7">برنده، تأییدشده، عضویتِ فعال. متنِ سبز از <span style="font-variant-numeric:tabular-nums">‎#2F8347</span> می‌آید.</div>
+      </div>
+      <div style="width:170px;display:flex;flex-direction:column;gap:8px">
+        <div style="height:56px;background:#C4514E;border-radius:6px"></div>
+        <div style="font-size:13px;font-weight:600">قرمزِ کم‌رنگ</div>
+        <div style="font-size:12px;color:#5B6673;line-height:1.7">فقط خطا، لغو و ردِ فنی. <span style="font-variant-numeric:tabular-nums">‎#C4514E</span></div>
+      </div>
+      <div style="width:170px;display:flex;flex-direction:column;gap:8px">
+        <div style="height:56px;background:#F5F6F8;border:1px solid #D4DAE0;border-radius:6px"></div>
+        <div style="font-size:13px;font-weight:600">زمینه و مرز</div>
+        <div style="font-size:12px;color:#5B6673;line-height:1.7">زمینه <span style="font-variant-numeric:tabular-nums">‎#F5F6F8</span> · سطح سفید · مرز <span style="font-variant-numeric:tabular-nums">‎#D4DAE0</span> · متنِ فرعی <span style="font-variant-numeric:tabular-nums">‎#5B6673</span></div>
+      </div>
+    </div>
+    <div style="font-size:13px;color:#5B6673;line-height:1.9;border-top:1px solid #E6EAEE;padding-top:14px">دو نکته: رنگِ سیرِ لوگو (<span style="font-variant-numeric:tabular-nums">‎#4A91D4</span> و <span style="font-variant-numeric:tabular-nums">‎#4CAF63</span>) با متنِ سفید خوانا نیست، پس برایِ سطحِ دکمه از هم‌خانوادهٔ تیره‌ترش استفاده می‌شود و رنگِ روشن به نشانگر و مرز می‌رسد. زرد هیچ‌وقت زیرِ متنِ سفید نمی‌رود.</div>
+  </div>
+
+  <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:18px">
+    <div style="font-size:18px;font-weight:600">نوشته</div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><div style="width:120px;font-size:12px;color:#5B6673;flex:none">عنوانِ صفحه · ۲۸</div><div style="font-size:28px;font-weight:700">تابلو فشار متوسط کمپکت</div></div>
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><div style="width:120px;font-size:12px;color:#5B6673;flex:none">عنوانِ بخش · ۲۱</div><div style="font-size:21px;font-weight:700">۷ پیشنهاد رسیده</div></div>
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><div style="width:120px;font-size:12px;color:#5B6673;flex:none">عنوانِ کارت · ۱۷</div><div style="font-size:17px;font-weight:600">مشخصاتِ فنی</div></div>
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><div style="width:120px;font-size:12px;color:#5B6673;flex:none">متن · ۱۴</div><div style="font-size:14px">پیشنهادها بر اساسِ مبلغ، سپس زمانِ تحویل و سپس نوعِ پرداخت مرتب می‌شوند.</div></div>
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><div style="width:120px;font-size:12px;color:#5B6673;flex:none">فرعی · ۱۳</div><div style="font-size:13px;color:#5B6673">خراسان رضوی · توزیع برق شهر مشهد</div></div>
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><div style="width:120px;font-size:12px;color:#5B6673;flex:none">برچسب · ۱۲</div><div style="font-size:12px;color:#5B6673">مبلغ (تومان)</div></div>
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap"><div style="width:120px;font-size:12px;color:#5B6673;flex:none">مبلغ</div><div style="font-size:24px;font-weight:700;font-variant-numeric:tabular-nums">۱۲۵٬۰۰۰٬۰۰۰ <span style="font-size:13px;font-weight:400;color:#5B6673">تومان</span></div></div>
+    </div>
+    <div style="font-size:13px;color:#5B6673;line-height:1.9;border-top:1px solid #E6EAEE;padding-top:14px">قلم: وزیرمتن، وزن‌های ۴۰۰ · ۵۰۰ · ۶۰۰ · ۷۰۰. همهٔ عددها فارسی، جداکنندهٔ هزارگان «٬»، مبلغ همیشه با واحدِ «تومان». تاریخ‌ها شمسی: ۲۸ مرداد ۱۴۰۴.</div>
+  </div>
+
+  <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:20px">
+    <div style="font-size:18px;font-weight:600">دکمه</div>
+    <div style="display:flex;flex-wrap:wrap;gap:24px">
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="background:#2F6FA8;color:#fff;font-size:14px;font-weight:600;padding:10px 18px;border-radius:6px;text-align:center">ثبتِ استعلام</div><div style="font-size:12px;color:#5B6673">اصلی — یکی در هر صفحه</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="background:#E8D91E;color:#1B2430;font-size:14px;font-weight:600;padding:10px 18px;border-radius:6px;text-align:center">استعلامِ تازه</div><div style="font-size:12px;color:#5B6673">تأکید — فقط همین یک کار</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="background:#2F8347;color:#fff;font-size:14px;font-weight:600;padding:10px 18px;border-radius:6px;text-align:center">انتخاب به‌عنوانِ برنده</div><div style="font-size:12px;color:#5B6673">خبرِ خوب</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="border:1px solid #D4DAE0;background:#fff;color:#31404F;font-size:14px;font-weight:500;padding:10px 18px;border-radius:6px;text-align:center">مشخصاتِ فنی</div><div style="font-size:12px;color:#5B6673">دوم</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="border:1px solid #E3C9C8;background:#fff;color:#A8413E;font-size:14px;font-weight:500;padding:10px 18px;border-radius:6px;text-align:center">لغوِ استعلام</div><div style="font-size:12px;color:#5B6673">منفی</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="color:#2F73B0;font-size:14px;font-weight:600;padding:10px 4px;text-align:center">اصلاح</div><div style="font-size:12px;color:#5B6673">متنی — کنارِ بخش‌های مرورِ نهایی</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="background:#F1F3F5;border:1px solid #DFE4E9;color:#A8B0B9;font-size:14px;font-weight:600;padding:10px 18px;border-radius:6px;text-align:center">مرحلهٔ بعد</div><div style="font-size:12px;color:#5B6673">غیرفعال</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="background:#2F6FA8;color:#fff;font-size:14px;font-weight:600;padding:10px 18px;border-radius:6px;text-align:center;opacity:.75">در حالِ ثبت…</div><div style="font-size:12px;color:#5B6673">در انتظار</div></div>
+    </div>
+    <div style="font-size:13px;color:#5B6673;line-height:1.9;border-top:1px solid #E6EAEE;padding-top:14px">ارتفاعِ دکمه در دسکتاپ ۴۰ پیکسل، در موبایل ۴۸ پیکسل. گردی ۶ پیکسل. بدونِ سایه.</div>
+  </div>
+
+  <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:20px">
+    <div style="font-size:18px;font-weight:600">فیلد</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px">
+
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="font-size:13px;font-weight:500">نامِ شرکت <span style="color:#C4514E">*</span></div>
+        <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:11px 12px;font-size:14px">صنایع تابلوسازی پارس</div>
+        <div style="font-size:12px;color:#5B6673">حالتِ پرشده</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="font-size:13px;font-weight:500">تلفنِ ثابت</div>
+        <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:11px 12px;font-size:14px;color:#A8B0B9">۰۵۱ ۳۷۶۵۴۳۲۱</div>
+        <div style="font-size:12px;color:#5B6673">خالی، با راهنمای درونِ فیلد</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="font-size:13px;font-weight:500">تعدادِ سلول <span style="color:#C4514E">*</span></div>
+        <div style="border:2px solid #4A91D4;background:#fff;border-radius:6px;padding:10px 12px;font-size:14px;display:flex;justify-content:space-between"><span>۵</span><span style="color:#8A939E">سلول</span></div>
+        <div style="font-size:12px;color:#5B6673">فعال، با واحد</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="font-size:13px;font-weight:500">شمارهٔ موبایل <span style="color:#C4514E">*</span></div>
+        <div style="border:1px solid #C4514E;background:#FDF7F7;border-radius:6px;padding:11px 12px;font-size:14px">۰۹۱۵۱۲۳۴۵۶۷</div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:#8E3835"><span style="width:5px;height:5px;border-radius:50%;background:#C4514E;display:inline-block"></span>این شماره قبلاً ثبت شده است.</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="font-size:13px;font-weight:500">استانِ پروژه <span style="color:#C4514E">*</span></div>
+        <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:11px 12px;font-size:14px;display:flex;justify-content:space-between"><span>خراسان رضوی</span><span style="color:#8A939E;font-size:11px">▾</span></div>
+        <div style="font-size:12px;color:#5B6673">انتخاب از فهرست</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="font-size:13px;font-weight:500">سطحِ ولتاژ <span style="color:#C4514E">*</span></div>
+        <div style="display:flex;border:1px solid #D4DAE0;border-radius:6px;overflow:hidden;background:#fff">
+          <div style="flex:1;padding:11px;font-size:14px;font-weight:600;text-align:center;background:#EAF3FB;color:#255E8E">۲۰ کیلوولت</div>
+          <div style="flex:1;padding:11px;font-size:14px;text-align:center;color:#5B6673;border-right:1px solid #D4DAE0">۳۳ کیلوولت</div>
+        </div>
+        <div style="font-size:12px;color:#5B6673">انتخابِ دوگزینه‌ای</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="font-size:13px;font-weight:500">تجهیزاتِ اصلی</div>
+        <div style="border:1px solid #D4DAE0;border-radius:6px;background:#fff;overflow:hidden">
+          <div style="display:flex;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid #EDF0F3">
+            <div style="width:17px;height:17px;border-radius:4px;background:#2F6FA8;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;flex:none">✓</div>
+            <div style="font-size:14px;flex:1">ترانسِ جریان</div>
+            <div style="border:1px solid #D4DAE0;border-radius:5px;padding:5px 9px;font-size:12px;width:120px;color:#31404F">برندِ دلخواه: ایتال</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:9px 12px">
+            <div style="width:17px;height:17px;border-radius:4px;border:1px solid #C9D1D9;background:#fff;flex:none"></div>
+            <div style="font-size:14px;flex:1;color:#5B6673">رلهٔ حفاظتی</div>
+            <div style="border:1px solid #EDF0F3;border-radius:5px;padding:5px 9px;font-size:12px;width:120px;color:#C9D1D9">برندِ دلخواه</div>
+          </div>
+        </div>
+        <div style="font-size:12px;color:#5B6673">تیک + کادرِ برند؛ کادر تا تیک نخورد غیرفعال است</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="font-size:13px;font-weight:500">توضیح</div>
+        <div style="border:1px solid #D4DAE0;background:#fff;border-radius:6px;padding:11px 12px;font-size:14px;color:#A8B0B9;min-height:76px;line-height:1.8">هر نکتهٔ دیگری که تأمین‌کننده باید بداند — مثلاً محلِ نصب یا زمانِ بازدید.</div>
+        <div style="font-size:12px;color:#5B6673">کادرِ متنِ چندخطی</div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:7px">
+        <div style="font-size:13px;font-weight:500">پیوستِ فایل</div>
+        <div style="border:1px dashed #B9C4CE;background:#FAFBFC;border-radius:6px;padding:20px;text-align:center;display:flex;flex-direction:column;gap:5px">
+          <div style="font-size:14px;font-weight:500">فایل‌ها را این‌جا رها کنید</div>
+          <div style="font-size:12px;color:#5B6673">تصویر، PDF، اکسل، نقشه یا فایلِ فشرده · تا ۱۰ فایل · هرکدام تا ۲۵ مگابایت</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;border:1px solid #D4DAE0;border-radius:6px;padding:9px 12px;background:#fff">
+          <div style="font-size:14px;flex:1">نقشهٔ تک‌خطی.pdf</div>
+          <div style="font-size:12px;color:#5B6673;font-variant-numeric:tabular-nums">۲٫۴ مگابایت</div>
+          <div style="font-size:13px;color:#A8413E">حذف</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;border:1px solid #E3C9C8;border-radius:6px;padding:9px 12px;background:#FDF7F7">
+          <div style="font-size:14px;flex:1;color:#8E3835">آرایشِ تابلو.dwg</div>
+          <div style="font-size:12px;color:#8E3835;font-variant-numeric:tabular-nums">۳۱ مگابایت</div>
+          <div style="font-size:13px;color:#A8413E">حذف</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:#8E3835"><span style="width:5px;height:5px;border-radius:50%;background:#C4514E;display:inline-block"></span>از سقفِ ۲۵ مگابایت بزرگ‌تر است و بارگذاری نشد.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:18px">
+    <div style="font-size:18px;font-weight:600">برچسبِ وضعیت</div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <div style="display:flex;align-items:center;gap:6px;background:#EAF3FB;border:1px solid #BFDAF0;color:#255E8E;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#4A91D4;display:inline-block"></span>باز</div>
+      <div style="display:flex;align-items:center;gap:6px;background:#E8F5EC;border:1px solid #B6DFC3;color:#1E6B37;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#4CAF63;display:inline-block"></span>بسته با برنده</div>
+      <div style="display:flex;align-items:center;gap:6px;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#A8B0B9;display:inline-block"></span>بسته بدونِ برنده</div>
+      <div style="display:flex;align-items:center;gap:6px;background:#FBEEEE;border:1px solid #E3C9C8;color:#A8413E;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#C4514E;display:inline-block"></span>لغو‌شده</div>
+      <div style="background:#FBEEEE;border:1px solid #E3C9C8;color:#A8413E;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px">ردِ فنی شد</div>
+      <div style="background:#FCF8D6;border:1px solid #E4D866;color:#5F5A0C;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px">۳ روز مانده</div>
+      <div style="background:#FCF8D6;border:1px solid #E4D866;color:#5F5A0C;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px">در انتظارِ تأیید</div>
+      <div style="background:#E8F5EC;border:1px solid #B6DFC3;color:#1E6B37;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px">تأییدشده</div>
+      <div style="background:#E8F5EC;border:1px solid #B6DFC3;color:#1E6B37;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px">منطبق با وندور</div>
+      <div style="background:#FBEEEE;border:1px solid #E3C9C8;color:#A8413E;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px">نامنطبق</div>
+      <div style="background:#2F8347;color:#fff;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px">برنده</div>
+      <div style="background:#EAF3FB;border:1px solid #BFDAF0;color:#255E8E;font-size:12px;font-weight:700;padding:4px 10px;border-radius:5px">رتبهٔ ۱</div>
+      <div style="background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:700;padding:4px 10px;border-radius:5px">رتبهٔ ۳</div>
+      <div style="background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px">طرحِ رایگان</div>
+      <div style="background:#E8F5EC;border:1px solid #B6DFC3;color:#1E6B37;font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px">عضویتِ فعال</div>
+    </div>
+  </div>
+
+  <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:18px">
+    <div style="font-size:18px;font-weight:600">جدول و کارت</div>
+
+    <div style="border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+      <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid #E6EAEE">
+        <div style="font-size:15px;font-weight:600">استعلام‌های من</div>
+        <div style="flex:1"></div>
+        <div style="font-size:13px;color:#5B6673">۳ ردیف</div>
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-size:14px">
+        <thead>
+          <tr style="background:#FAFBFC;border-bottom:1px solid #E6EAEE">
+            <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:130px">شماره</th>
+            <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px">عنوان</th>
+            <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:150px">دسته</th>
+            <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:110px">استان</th>
+            <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:90px">پیشنهاد</th>
+            <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:140px">مهلت</th>
+            <th style="text-align:right;font-weight:500;font-size:12px;color:#5B6673;padding:9px 12px;width:130px">وضعیت</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #EDF0F3">
+            <td style="padding:11px 12px;font-variant-numeric:tabular-nums;color:#2F73B0;font-weight:600">ا-۱۴۰۴-۰۲۳۷</td>
+            <td style="padding:11px 12px">تابلو فشار متوسط کمپکت، ۵ سلول</td>
+            <td style="padding:11px 12px;color:#5B6673">فشار متوسط ← کمپکت</td>
+            <td style="padding:11px 12px;color:#5B6673">خراسان رضوی</td>
+            <td style="padding:11px 12px;font-weight:600;font-variant-numeric:tabular-nums">۷</td>
+            <td style="padding:11px 12px;font-variant-numeric:tabular-nums">۲۸ مرداد <span style="color:#5F5A0C;background:#FCF8D6;border:1px solid #E4D866;font-size:11px;padding:1px 6px;border-radius:20px">۳ روز</span></td>
+            <td style="padding:11px 12px"><span style="display:inline-flex;align-items:center;gap:6px;background:#EAF3FB;border:1px solid #BFDAF0;color:#255E8E;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#4A91D4;display:inline-block"></span>باز</span></td>
+          </tr>
+          <tr style="border-bottom:1px solid #EDF0F3">
+            <td style="padding:11px 12px;font-variant-numeric:tabular-nums;color:#2F73B0;font-weight:600">ا-۱۴۰۴-۰۲۰۴</td>
+            <td style="padding:11px 12px">کابل خودنگهدار ۷۰+۲۵، ۸۰۰ متر</td>
+            <td style="padding:11px 12px;color:#5B6673">کابل ← فشار ضعیف</td>
+            <td style="padding:11px 12px;color:#5B6673">یزد</td>
+            <td style="padding:11px 12px;font-weight:600;font-variant-numeric:tabular-nums">۴</td>
+            <td style="padding:11px 12px;color:#5B6673;font-variant-numeric:tabular-nums">۱۴ مرداد</td>
+            <td style="padding:11px 12px"><span style="display:inline-flex;align-items:center;gap:6px;background:#E8F5EC;border:1px solid #B6DFC3;color:#1E6B37;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#4CAF63;display:inline-block"></span>بسته با برنده</span></td>
+          </tr>
+          <tr>
+            <td style="padding:11px 12px;font-variant-numeric:tabular-nums;color:#2F73B0;font-weight:600">ا-۱۴۰۴-۰۱۸۸</td>
+            <td style="padding:11px 12px;color:#5B6673">نیروگاه خورشیدی ۱۰۰ کیلووات</td>
+            <td style="padding:11px 12px;color:#5B6673">خورشیدی ← اجرا</td>
+            <td style="padding:11px 12px;color:#5B6673">اصفهان</td>
+            <td style="padding:11px 12px;color:#8A939E;font-variant-numeric:tabular-nums">۰</td>
+            <td style="padding:11px 12px;color:#5B6673;font-variant-numeric:tabular-nums">۲ مرداد</td>
+            <td style="padding:11px 12px"><span style="display:inline-flex;align-items:center;gap:6px;background:#F1F3F5;border:1px solid #DFE4E9;color:#5B6673;font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px"><span style="width:6px;height:6px;border-radius:50%;background:#A8B0B9;display:inline-block"></span>بسته بدونِ برنده</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:14px">
+      <div style="width:330px;background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:9px">
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <div style="font-size:13px;color:#5B6673;font-variant-numeric:tabular-nums">ا-۱۴۰۴-۰۲۳۷</div>
+          <div style="background:#FCF8D6;border:1px solid #E4D866;color:#5F5A0C;font-size:11px;font-weight:600;padding:2px 8px;border-radius:20px">۳ روز مانده</div>
+        </div>
+        <div style="font-size:16px;font-weight:600;line-height:1.6">تابلو فشار متوسط کمپکت، ۵ سلول</div>
+        <div style="font-size:12px;color:#5B6673;line-height:1.8">خراسان رضوی · توزیع برق شهر مشهد<br>فشار متوسط ← کمپکت</div>
+        <div style="border-top:1px solid #EDF0F3;padding-top:9px;font-size:13px">۷ پیشنهاد رسیده</div>
+      </div>
+      <div style="width:330px;background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:6px">
+        <div style="font-size:13px;color:#5B6673">کارتِ رتبه — سمتِ تأمین‌کننده</div>
+        <div style="font-size:17px;font-weight:600;line-height:1.7">از میانِ <span style="font-size:22px;font-weight:700;font-variant-numeric:tabular-nums">۷</span> پیشنهاد، رتبهٔ شما <span style="font-size:22px;font-weight:700;color:#255E8E;font-variant-numeric:tabular-nums">۳</span> است.</div>
+        <div style="font-size:12px;color:#5B6673;line-height:1.8">هیچ مبلغ و نامی از رقبا نشان داده نمی‌شود. تا پایانِ مهلت می‌توانید پیشنهادتان را اصلاح کنید.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:18px">
+    <div style="font-size:18px;font-weight:600">نوارِ دعوت و پیام</div>
+
+    <div style="display:flex;align-items:center;gap:12px;padding:11px 14px;background:#FCF8D6;border:1px solid #E4D866;border-radius:6px">
+      <span style="width:8px;height:8px;border-radius:50%;background:#E8D91E;display:inline-block;flex:none"></span>
+      <div style="font-size:13px;color:#3F4753;flex:1;line-height:1.8">برایِ دیدنِ نامِ شرکت و دانلودِ پیوستِ پیشنهاد، طرحِ خود را ارتقا دهید.</div>
+      <div style="font-size:13px;font-weight:600;color:#2F73B0">ارتقای طرح</div>
+    </div>
+    <div style="font-size:12px;color:#5B6673">دعوت است نه دیوار: هیچ عددی پنهان نمی‌شود؛ فقط هویت و فایل.</div>
+
+    <div style="display:flex;align-items:center;gap:12px;padding:11px 14px;background:#EEF8F1;border:1px solid #B6DFC3;border-radius:6px">
+      <span style="width:8px;height:8px;border-radius:50%;background:#4CAF63;display:inline-block;flex:none"></span>
+      <div style="font-size:13px;color:#1E6B37;flex:1;line-height:1.8">پیشنهادِ شما ثبت شد. تا پایانِ مهلت می‌توانید اصلاحش کنید.</div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:12px;padding:11px 14px;background:#EAF3FB;border:1px solid #BFDAF0;border-radius:6px">
+      <span style="width:8px;height:8px;border-radius:50%;background:#4A91D4;display:inline-block;flex:none"></span>
+      <div style="font-size:13px;color:#255E8E;flex:1;line-height:1.8">حسابِ شما ثبت شد و در انتظارِ تأییدِ ماست. پس از تأیید پیامک می‌گیرید.</div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:12px;padding:11px 14px;background:#FBEEEE;border:1px solid #E3C9C8;border-radius:6px">
+      <span style="width:8px;height:8px;border-radius:50%;background:#C4514E;display:inline-block;flex:none"></span>
+      <div style="font-size:13px;color:#8E3835;flex:1;line-height:1.8">مهلتِ این استعلام تمام شده است.</div>
+    </div>
+  </div>
+
+  <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:18px">
+    <div style="font-size:18px;font-weight:600">حالتِ خالی</div>
+    <div style="border:1px solid #E6EAEE;border-radius:8px;padding:40px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;background:#FAFBFC">
+      <div style="width:44px;height:44px;border:2px dashed #C9D1D9;border-radius:8px"></div>
+      <div style="font-size:17px;font-weight:600">هنوز استعلامی ثبت نکرده‌اید</div>
+      <div style="font-size:14px;color:#5B6673;max-width:420px;line-height:1.9">یک بار مشخصات را وارد کنید و چند پیشنهادِ قابلِ مقایسه بگیرید.</div>
+      <div style="background:#E8D91E;color:#1B2430;font-size:14px;font-weight:600;padding:11px 20px;border-radius:6px;margin-top:6px">استعلامِ تازه</div>
+    </div>
+    <div style="font-size:13px;color:#5B6673;line-height:1.9;border-top:1px solid #E6EAEE;padding-top:14px">قاعده: هیچ جدولِ خالی‌ای نمایش داده نمی‌شود. جایش یک جمله، یک دلیل و همان دکمهٔ اصلی در وسطِ کادر می‌آید.</div>
+  </div>
+
+  <div style="background:#fff;border:1px solid #D4DAE0;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:18px">
+    <div style="font-size:18px;font-weight:600">نوارِ بالا و نوارِ پیشرفت</div>
+    <div style="border:1px solid #D4DAE0;border-radius:8px;overflow:hidden">
+      <div style="height:56px;background:#2F6FA8;display:flex;align-items:center;gap:24px;padding:0 20px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="width:34px;height:34px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="assets/logo.png" alt="برقپا" style="width:26px;height:26px;object-fit:contain"></div>
+          <div style="color:#fff;font-size:17px;font-weight:700">برقپا</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:20px;font-size:14px">
+          <div style="color:#fff;font-weight:600;padding:4px 0;border-bottom:2px solid #E8D91E">داشبورد</div>
+          <div style="color:#D8E6F3">استعلام‌های من</div>
+          <div style="color:#D8E6F3">استعلام‌های باز</div>
+          <div style="color:#D8E6F3">عضویت</div>
+          <div style="color:#D8E6F3">پروفایل</div>
+        </div>
+        <div style="flex:1"></div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="background:#E8D91E;color:#1B2430;font-size:14px;font-weight:600;padding:7px 14px;border-radius:6px">استعلامِ تازه</div>
+          <div style="color:#fff;font-size:14px">مهندس رضایی</div>
+          <div style="color:#D8E6F3;font-size:14px">خروج</div>
+        </div>
+      </div>
+      <div style="background:#fff;padding:16px 20px;display:flex;align-items:center;gap:0">
+        <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+          <div style="display:flex;align-items:center;gap:9px"><div style="width:24px;height:24px;border-radius:50%;background:#2F6FA8;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">✓</div><div style="font-size:13px;font-weight:600">محل و وندور</div></div>
+          <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+          <div style="display:flex;align-items:center;gap:9px"><div style="width:24px;height:24px;border-radius:50%;background:#2F6FA8;color:#fff;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">✓</div><div style="font-size:13px;font-weight:600">دسته‌بندی</div></div>
+          <div style="height:3px;background:#2F6FA8;border-radius:2px"></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+          <div style="display:flex;align-items:center;gap:9px"><div style="width:24px;height:24px;border-radius:50%;background:#EAF3FB;border:2px solid #4A91D4;color:#255E8E;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center">۳</div><div style="font-size:13px;font-weight:600;color:#255E8E">مشخصاتِ فنی</div></div>
+          <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:7px;flex:1">
+          <div style="display:flex;align-items:center;gap:9px"><div style="width:24px;height:24px;border-radius:50%;background:#F1F3F5;border:1px solid #DFE4E9;color:#8A939E;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center">۴</div><div style="font-size:13px;color:#5B6673">فایل و مهلت</div></div>
+          <div style="height:3px;background:#DFE4E9;border-radius:2px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+</body>
+</html>
